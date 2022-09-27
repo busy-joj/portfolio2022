@@ -90,7 +90,7 @@ $(function () {
   });
 
   /* 메뉴 관련 부분 */
-  var menu_on = $('#menu_wrap #menu li');
+  var menu_on = $('#menu-wrap #menu li');
   var contents = $('#contents > div');
   var btn = $('#floatdiv ul li');
   menu_on.click(function (e) {

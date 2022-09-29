@@ -6,17 +6,22 @@
 html,
 body {
   overflow-y: hidden;
-  font-family: 'Noto Sans';
+  font-family: 'GmarketSans';
+}
+
+body * {
+  font-family: 'GmarketSans', 'Noto Sans';
 }
 
 ul,
-ol {
+ol,
+li {
   list-style: none
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #181818;
 }
 
 .blind {
@@ -33,9 +38,7 @@ a {
   font-weight: 900;
   font-display: fallback;
   src: local('Noto Sans Black'),
-    url('../fonts/NotoSansKR-Black.woff2') format('woff2'),
-    url('../fonts/NotoSansKR-Black.woff') format('woff'),
-    url('../fonts/NotoSansKR-Black.ttf') format('truetype');
+    url('../fonts/NotoSansKR-Black.otf') format('opentype');
 }
 
 @font-face {
@@ -43,9 +46,7 @@ a {
   font-weight: 700;
   font-display: fallback;
   src: local('Noto Sans Bold'),
-    url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
-    url('../fonts/NotoSansKR-Bold.woff') format('woff'),
-    url('../fonts/NotoSansKR-Bold.ttf') format('truetype');
+    url('../fonts/NotoSansKR-Bold.otf') format('opentype');
 }
 
 @font-face {
@@ -53,9 +54,7 @@ a {
   font-weight: 500;
   font-display: fallback;
   src: local('Noto Sans Medium'),
-    url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
-    url('../fonts/NotoSansKR-Medium.woff') format('woff'),
-    url('../fonts/NotoSansKR-Medium.ttf') format('truetype');
+    url('../fonts/NotoSansKR-Medium.otf') format('opentype');
 }
 
 @font-face {
@@ -63,9 +62,7 @@ a {
   font-weight: 300;
   font-display: fallback;
   src: local('Noto Sans Regular'),
-    url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
-    url('../fonts/NotoSansKR-Regular.woff') format('woff'),
-    url('../fonts/NotoSansKR-Regular.ttf') format('truetype');
+    url('../fonts/NotoSansKR-Regular.otf') format('opentype');
 }
 
 @font-face {
@@ -73,62 +70,32 @@ a {
   font-weight: 200;
   font-display: fallback;
   src: local('Noto Sans Light'),
-    url('../fonts/NotoSansKR-Light.woff2') format('woff2'),
-    url('../fonts/NotoSansKR-Light.woff') format('woff'),
-    url('../fonts/NotoSansKR-Light.ttf') format('truetype');
+    url('../fonts/NotoSansKR-Light.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?1ptik2');
-  src: url('../fonts/icomoon.eot?1ptik2#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?1ptik2') format('truetype'),
-    url('../fonts/icomoon.woff?1ptik2') format('woff'),
-    url('../fonts/icomoon.svg?1ptik2#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+  font-family: 'GmarketSans';
+  font-weight: 600;
+  font-display: fallback;
+  src: local('GmarketSans'),
+    url('../fonts/GmarketSansBold.otf') format('opentype'),
+    url('../fonts/GmarketSansBold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Changwon';
-  font-weight: normal;
-  src: local('Noto Sans Light'),
-    url('../fonts/Changwon.ttf') format('truetype'),
-    url('../fonts/Changwon.otf') format('opentype');
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  font-display: fallback;
+  src: local('GmarketSans'),
+    url('../fonts/GmarketSansMedium.otf') format('opentype'),
+    url('../fonts/GmarketSansMedium.ttf') format('truetype');
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-icon-map .path1:before {
-  content: "\e902";
-  color: rgb(34, 34, 34);
-}
-
-.icon-icon-map .path2:before {
-  content: "\e903";
-  margin-left: -0.83984375em;
-  color: rgb(255, 255, 255);
-}
-
-.icon-icon-scroll:before {
-  content: "\e900";
-}
-
-.icon-icon-scroll-txt:before {
-  content: "\e901";
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 200;
+  font-display: fallback;
+  src: local('GmarketSans'),
+    url('../fonts/GmarketSansLight.otf') format('opentype'),
+    url('../fonts/GmarketSansLight.ttf') format('truetype');
 }

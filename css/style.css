@@ -46,6 +46,10 @@ h2.tit {
     margin: 44px 0 0 0;
 }
 
+.point {
+    color: #5BA9AE;
+}
+
 /*토글메뉴*/
 #toggle {
     position: fixed;
@@ -117,12 +121,21 @@ h2.tit {
 }
 
 #overlay nav {
-    padding-top: 200px;
-    padding-left: 200px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay nav ul {
+    display: flex !important;
+    gap: 30px;
 }
 
 #overlay nav ul,
 #overlay nav ul li {
+    width: 1000px;
     margin: 0;
     padding: 0;
     display: block;
@@ -134,11 +147,12 @@ h2.tit {
     opacity: 0;
     transition: all 0.9s 0s ease;
     margin-left: 60px;
+    text-align: center;
 }
 
 #overlay nav ul li a {
     position: relative;
-    height: 50px;
+    width: 180px;
     display: inline-block;
     color: #ffffff;
     transition: all 0.6s 0s ease;
@@ -187,10 +201,11 @@ h2.tit {
 
 #overlay nav ul li a {
     text-transform: normal;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     color: #000000;
     text-decoration: none;
+    text-align: center;
 }
 
 #menu-page.overlay #overlay {
@@ -202,6 +217,9 @@ h2.tit {
     max-height: 1200px;
     opacity: 1;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     transition: all 0.3s ease;
 }
 
@@ -210,23 +228,15 @@ h2.tit {
     opacity: 1;
 }
 
-.company-info {
-    padding-left: 200px;
-    margin-top: 152px;
+.joj-info {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
 }
 
-.company-info p span {
-    display: block;
-    font-size: 16px;
-    color: #000;
-    font-weight: 500;
-    padding-top: 5px;
-}
-
-.company-info address {
-    font-style: normal;
-    font-weight: 500;
-    margin-top: 30px;
+.joj-info p {
+    padding: 20px 0 0 0;
 }
 
 /* 상단 풀다운 메뉴 스타일 */
@@ -283,12 +293,12 @@ h2.tit {
 }
 
 #menu li a:hover {
-    color: #7E76B2;
+    color: #5BA9AE;
     transform: scale(1.3);
 }
 
 #menu li.on a {
-    color: #7E76B2;
+    color: #5BA9AE;
     transform: scale(1.3);
 }
 
@@ -305,11 +315,11 @@ h2.tit {
 }
 
 .content {
-    background: #EFEFEF;
+    background: #fefefe;
 }
 
 .content .cnt01 {
-    background: #EFEFEF url(../images/img-main-bg.webp) no-repeat;
+    background: #fefefe url(../images/img-main-bg.webp) no-repeat;
     background-size: cover;
 }
 
@@ -361,7 +371,7 @@ h2.tit {
     content: '';
     width: 600px;
     height: 600px;
-    background: #66cc99;
+    background: #5BA9AE;
     border-radius: 50%;
 }
 
@@ -374,10 +384,40 @@ h2.tit {
 }
 
 /*** intro ***/
+.intro {
+    background: url(../images/note_bg.jpg) no-repeat;
+    background-size: cover;
+}
+
 .intro .wrap {
     width: 1200px;
     margin: 0 auto;
     padding: 163px 0;
+}
+
+.intro .tit-sub {
+    margin: 50px 0 0 0;
+}
+
+.intro .cont-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro .txt-box {
+    width: 60%;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.intro .img-box img {
+    border-radius: 50%;
+    box-shadow: 0 0 23px #5BA9AE;
+
 }
 
 .work .items {
@@ -397,7 +437,7 @@ h2.tit {
     width: 100%;
     height: 400px;
     background: #fff;
-    box-shadow: 0 0 23px rgba(130, 181, 168, 1);
+    box-shadow: 0 0 23px rgba(91, 169, 174, 1);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -413,7 +453,7 @@ h2.tit {
     padding: 15px 0 0 0;
     font-weight: 400;
     display: inline-block;
-    border-bottom: 3px solid #82B5A8;
+    border-bottom: 3px solid #5BA9AE;
 }
 
 .work.puple .item a {
@@ -433,7 +473,42 @@ h2.tit {
     padding: 50px 0;
 }
 
-.cnt06 .wrap {
+.work.access .items .txt {
+    text-align: justify;
+    font-size: 22px;
+    line-height: 30px;
+    border-top: 3px solid #5BA9AE;
+}
+
+.work.access .items .txt p {
+    margin: 0 0 10px 0;
+}
+
+.cnt06 .items {
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 0;
+}
+
+.cnt06 .item {
+    width: 180px;
+}
+
+.cnt06 .item span {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px 0;
+    text-shadow: 0 0 24px rgb(168, 130, 181);
+}
+
+.cnt06 .item img {
+    box-shadow: 0 0 23px rgb(168, 130, 181);
+    border-radius: 50%;
+}
+
+.cnt07 .wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -441,9 +516,14 @@ h2.tit {
     gap: 50px;
 }
 
-.cnt06 .wrap p {
+.cnt07 .wrap p {
     font-size: 72px;
     font-weight: 600;
     color: #fff;
-    text-shadow: 0 0 24px rgba(214, 68, 68, 1);
+    text-shadow: 0 0 24px rgba(91, 169, 174, 1);
+}
+
+.info {
+    display: block;
+    text-align: right;
 }

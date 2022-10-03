@@ -70,25 +70,6 @@ $(function () {
 });
 
 $(function () {
-  $('body').on('mousemove', function (e) {
-    var posX = e.pageX / 70;
-    var posY = e.pageY / 70;
-
-    $('.obj1').css({ 'right': 50 - posX });
-    $('.obj2').css({ 'top': -120 + posY });
-    $('.obj3').css({ 'right': 150 + posX });
-
-    $('.obj4').css({ 'bottom': -70 - posY });
-    $('.obj5').css({ 'left': 0 + posX });
-
-    $('.obj6').css({ 'top': -100 - posY });
-    $('.obj7').css({ 'left': 174 - posX });
-
-    $('.obj8').css({ 'bottom': -160 + posY });
-    $('.obj9').css({ 'left': 400 + posX });
-    $('.obj10').css({ 'top': -155 + posY });
-  });
-
   /* 메뉴 관련 부분 */
   var menu_on = $('#menu-wrap #menu li');
   var contents = $('#contents > div');
@@ -100,6 +81,8 @@ $(function () {
     var section = contents.eq(i);
     var nowTop = i * ht;
     $('html, body').stop().animate({ scrollTop: nowTop }, 1500);
+    $('#menu li').removeClass('on')
+    $('#menu li').eq(i).addClass('on')
   });
 
   var swiper = new Swiper(".mySwiper", {

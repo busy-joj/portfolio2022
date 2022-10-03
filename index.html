@@ -10,9 +10,12 @@
   <meta name="Description" content="정윤정의 포트폴리오 페이지 입니다"/>
   <link rel="shortcut icon" href="favicon.ico">
   <title>Younjung's portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 
@@ -50,45 +53,177 @@
         </div>
       </section>
     </div>
-	<div id="menu-wrap">
-		<h1 class="blind">Younjung's portfolio</h1>
-		<ul id="menu">
-			<li class="on"><a href="#main">Home</a></li>
-			<li><a href="#profile">PROFILE</a></li>
-			<li><a href="#mobile">MOBILE</a></li>
-			<li><a href="#project">PROJECT</a></li>
-			<li><a href="#jQuery">jQuery</a></li>
-			<li><a href="#adaptive">ADAPTIVE</a></li>
-		</ul>		
-	</div><!-- id="menuWrap" -->
+    <div id="menu-wrap">
+      <h1 class="blind">Younjung's portfolio</h1>
+      <ul id="menu">
+        <li class="on"><a href="#main">Home</a></li>
+        <li><a href="#profile">PROFILE</a></li>
+        <li><a href="#mobile">MOBILE</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#jQuery">jQuery</a></li>
+        <li><a href="#adaptive">ADAPTIVE</a></li>
+      </ul>		
+    </div><!-- id="menuWrap" -->
   </header>
   <div class="content">
     <div class="cnt01">
-		<div class="wrap">
-			<div class="main">
-				<div class="main-txt">
-					<h2>지속가능한 프론트엔드 개발자, <br> 정윤정입니다.</h2>
-					<p>모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다. 제2항의 재판관중 3인은 국회에서 선출하는 자를, </p>
-				</div>
-				<div class="main-bg">
-					<img class="obj1" src="./images/img-main-bg1.png" alt="">
-					<img class="obj2" src="./images/img-main-bg2.png" alt="">
-					<img class="obj3" src="./images/img-main-bg3.png" alt="">
-					<img class="obj4" src="./images/img-main-bg4.png" alt="">
-					<img class="obj5" src="./images/img-main-bg5.png" alt="">
-					<img class="obj6" src="./images/img-main-bg6.png" alt="">
-					<img class="obj7" src="./images/img-main-bg7.png" alt="">
-					<img class="obj8" src="./images/img-main-bg8.png" alt="">
-					<img class="obj9" src="./images/img-main-bg9.png" alt="">
-					<img class="obj10" src="./images/img-main-bg10.png" alt="">
-				</div>
-			</div>	<!-- .main -->
-		</div>	<!-- .wrap -->
-	</div>	<!-- .cnt01 -->
+      <div class="wrap">
+        <div class="main">
+          <div class="main-txt">
+            <h2>지속가능한 <br> 프론트엔드 개발자, <br> 정윤정입니다.</h2>
+            <p>모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다. 제2항의 재판관중 3인은 국회에서 선출하는 자를, </p>
+          </div>
+          <div class="main-bg">
+            <img src="./images/img-main.png" alt="">
+          </div>
+        </div>	<!-- .main -->
+      </div>	<!-- .wrap -->
+    </div>	<!-- .cnt01 -->
 
-    <div class="cnt02"></div>
-    <div class="cnt03"></div>
-    <div class="cnt04"></div>
+    <div class="cnt02 intro">
+      <div class="wrap">
+        <h2 class="tit">ABOUT ME</h2>
+        <span class="tit-sub">"지속가능한 프론트엔드 개발자, 정윤정입니다"</p>
+      </div> <!-- .wrap -->
+    </div> <!-- .cnt02.intro -->
+
+    <div class="cnt03 work">
+      <div class="wrap">
+        <h2 class="tit">PUBLISHING <br> PROJECT</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul class="items">
+                <li class="item">
+                  <a href="https://retro.kbs.co.kr/" target="_blank" title="kbs옛날 라디오로 이동">
+                    <img src="./images/img-work-pub1.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Animation Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="https://urimalgosa.kbs.co.kr/ep4/index.html" target="_blank" title="kbs 4회 우리말 인증고사 이동">
+                    <img src="./images/img-work-pub2.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Responsive Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="https://urimalgosa.kbs.co.kr/ep5/index.html" target="_blank" title="kbs 5회 우리말 인증고사 이동">
+                    <img src="./images/img-work-pub3.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Responsive Project</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="items">
+                <li class="item">
+                  <a href="./work/hd/index0423.html" target="_blank" title="현대카드 클론 프로젝트 이동">
+                    <img src="./images/img-work-pub4.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Javascript Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="./work/tnt/index.html" target="_blank" title="탐앤탐스 클론 프로젝트 이동">
+                    <img src="./images/img-work-pub5.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>jQuery Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="./work/eagles/index.html" target="_blank" title="한화이글스 클론 프로젝트 이동">
+                    <img src="./images/img-work-pub6.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Responsive Project</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div> <!-- .wrap -->
+    </div>
+
+    <div class="cnt04 work">
+      <div class="wrap">
+        <h2 class="tit">FRONTEND <br> PROJECT</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul class="items">
+                <li class="item">
+                  <a href="https://retro.kbs.co.kr/" target="_blank" title="kbs옛날 라디오로 이동">
+                    <img src="./images/img-work-pub1.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Animation Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="https://urimalgosa.kbs.co.kr/ep4/index.html" target="_blank" title="kbs 4회 우리말 인증고사 이동">
+                    <img src="./images/img-work-pub2.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Responsive Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="https://urimalgosa.kbs.co.kr/ep5/index.html" target="_blank" title="kbs 5회 우리말 인증고사 이동">
+                    <img src="./images/img-work-pub3.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Responsive Project</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="items">
+                <li class="item">
+                  <a href="./work/hd/index0423.html" target="_blank" title="현대카드 클론 프로젝트 이동">
+                    <img src="./images/img-work-pub4.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Javascript Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="./work/tnt/index.html" target="_blank" title="탐앤탐스 클론 프로젝트 이동">
+                    <img src="./images/img-work-pub5.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>jQuery Project</span>
+                  </span>
+                </li>
+                <li class="item">
+                  <a href="./work/eagles/index.html" target="_blank" title="한화이글스 클론 프로젝트 이동">
+                    <img src="./images/img-work-pub6.png" alt="">
+                  </a>
+                  <span class="txt">
+                    <span>Responsive Project</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div> <!-- .wrap -->
+    </div>
     <div class="cnt05"></div>
     <div class="cnt06"></div>
   </div><!-- .content -->

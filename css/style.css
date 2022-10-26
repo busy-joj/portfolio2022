@@ -26,12 +26,11 @@
 
 .header h1 {
     text-indent: -99999px;
-    background: url(../images/logo_modiila.png) no-repeat;
 }
 
 h2.tit {
     font-size: 64px;
-    color: #181818;
+    color: #fff;
 }
 
 .wrap {
@@ -314,15 +313,6 @@ h2.tit {
     top: -50px;
 }
 
-.content {
-    background: #fefefe;
-}
-
-.content .cnt01 {
-    background: #fefefe url(../images/img-main-bg.webp) no-repeat;
-    background-size: cover;
-}
-
 .cnt01 .wrap {
     position: relative;
     width: 1200px;
@@ -347,15 +337,15 @@ h2.tit {
 }
 
 .main-txt h2 {
+    color:#fff;
     font-size: 3.5rem;
     letter-spacing: -.2px;
-    color: #181818;
     margin: 0 0 30px 0;
     font-weight: 600;
 }
 
 .main-txt p {
-    color: #181818;
+    color:#fff;
     font-size: 1.5rem;
 }
 
@@ -384,11 +374,6 @@ h2.tit {
 }
 
 /*** intro ***/
-.intro {
-    background: url(../images/note_bg.jpg) no-repeat;
-    background-size: cover;
-}
-
 .intro .wrap {
     width: 1200px;
     margin: 0 auto;

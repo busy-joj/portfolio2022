@@ -9,6 +9,7 @@ var scroll = function () {
   $(document).ready(function () {
     init();
     initEvent();
+    AOS.init();
   });
 
   var init = function () {

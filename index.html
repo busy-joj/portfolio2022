@@ -1,23 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Generator" content="VS Code"/>
-  <meta name="Author" content="정윤정"/>
-  <meta name="Keywords" content="정윤정, Jeong Younjung, 포트폴리오, 정윤정 포트폴리오, portfolio, Younjung's portfolio"/>
-  <meta name="Description" content="정윤정의 포트폴리오 페이지 입니다"/>
+  <meta name="Generator" content="VS Code" />
+  <meta name="Author" content="정윤정" />
+  <meta name="Keywords" content="정윤정, Jeong Younjung, 포트폴리오, 정윤정 포트폴리오, portfolio, Younjung's portfolio" />
+  <meta name="Description" content="정윤정의 포트폴리오 페이지 입니다" />
   <link rel="shortcut icon" href="favicon.ico">
   <title>Younjung's portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
   <script src="js/script.js"></script>
+
 </head>
 
 <body>
@@ -29,8 +34,10 @@
       <section id="overlay">
         <nav>
           <ul>
-            <li><a href="https://github.com/busy-joj" target="_blank"><img src="./images/git_icon.svg" alt=""> <span>github</span></a></li>
-            <li><a href="https://busy-joj.github.io/" target="_blank"><img src="./images/note_icon.svg" alt=""> <span>블로그</span></a></li>
+            <li><a href="https://github.com/busy-joj" target="_blank"><img src="./images/git_icon.svg" alt="">
+                <span>github</span></a></li>
+            <li><a href="https://busy-joj.github.io/" target="_blank"><img src="./images/note_icon.svg" alt="">
+                <span>블로그</span></a></li>
             <li><a href="mailto:busy.joj@gmail.com"><img src="./images/mail_icon.svg" alt=""><span>email</span></a></li>
           </ul>
         </nav>
@@ -52,7 +59,7 @@
         <li><a href="#access">ACCESSIBILITY</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li><a href="#thanks">THANKS</a></li>
-      </ul>		
+      </ul>
     </div><!-- id="menuWrap" -->
   </header>
   <div class="content" id="contents">
@@ -60,15 +67,16 @@
       <div class="wrap">
         <div class="main">
           <div class="main-txt">
-            <h2><span class="point"> 지속가능</span>한 <br> 프론트엔드 개발자, <br> 정윤정입니다.</h2>
-            <p>지금 당장 반짝 잘하는 건 누구나 할 수 있습니다. <br> 장기간 계속해서 유지해 나가기 위해  <br> 학습하고 성장하고자 합니다.</p>
+            <h2 data-aos="fade-up" data-aos-duration="3000"><span class="point"> 지속가능</span>한 <br> 프론트엔드 개발자, <br>
+              정윤정입니다.</h2>
+            <p>지금 당장 반짝 잘하는 건 누구나 할 수 있습니다. <br> 장기간 계속해서 유지해 나가기 위해 <br> 학습하고 성장하고자 합니다.</p>
           </div>
           <div class="main-bg">
             <img src="./images/img-main.png" alt="">
           </div>
-        </div>	<!-- .main -->
-      </div>	<!-- .wrap -->
-    </div>	<!-- .cnt01 -->
+        </div> <!-- .main -->
+      </div> <!-- .wrap -->
+    </div> <!-- .cnt01 -->
 
     <div class="cnt02 intro" id="about">
       <div class="wrap">
@@ -76,8 +84,10 @@
         <span class="tit-sub">"오늘보다 내일 더 성장할 저를 소개합니다."</span>
         <div class="cont-box">
           <div class="txt-box">
-            <p>현재에 안주하지 않는 도전 정신과 답을 찾아 고뇌하는 집요함을 원동력으로 한걸음씩 성장하는 정윤정입니다. 웹은 하루가 다르게 변화하고 진화하기에 지속적으로 학습하면서, 변화를 캐치해야 한다고 생각되어 안주하지 않고 1일 1커밋 챌린지와 개발노트 블로그를 운영하며 새로운 기술을 습득하기 위해 도전합니다.</p>
-            <p>또한 작업 중 만나는 풀기 어려운 문제들은 포기하고 싶은 순간이 아니라 성취를 이룰수 있는 기회라고 생각되어 답을 찾아내는 과정을 즐길 수 있으며, 다양한 각도로 접근하려고 노력하며, 해결할 때까지 집요하게 도전합니다. 이러한 점을 활용하여, 어제보다 오늘, 오늘보다 내일 더 성장하는 프론트엔드 개발자가 되겠습니다.</p>
+            <p>현재에 안주하지 않는 도전 정신과 답을 찾아 고뇌하는 집요함을 원동력으로 한걸음씩 성장하는 정윤정입니다. 웹은 하루가 다르게 변화하고 진화하기에 지속적으로 학습하면서, 변화를 캐치해야
+              한다고 생각되어 안주하지 않고 1일 1커밋 챌린지와 개발노트 블로그를 운영하며 새로운 기술을 습득하기 위해 도전합니다.</p>
+            <p>또한 작업 중 만나는 풀기 어려운 문제들은 포기하고 싶은 순간이 아니라 성취를 이룰수 있는 기회라고 생각되어 답을 찾아내는 과정을 즐길 수 있으며, 다양한 각도로 접근하려고 노력하며,
+              해결할 때까지 집요하게 도전합니다. 이러한 점을 활용하여, 어제보다 오늘, 오늘보다 내일 더 성장하는 프론트엔드 개발자가 되겠습니다.</p>
           </div>
           <div class="img-box">
             <img src="./images/img-about.png" alt="">
@@ -103,7 +113,8 @@
                   </span>
                 </li>
                 <li class="item">
-                  <a class="img" href="https://urimalgosa.kbs.co.kr/ep4/index.html" target="_blank" title="kbs 4회 우리말 인증고사 이동">
+                  <a class="img" href="https://urimalgosa.kbs.co.kr/ep4/index.html" target="_blank"
+                    title="kbs 4회 우리말 인증고사 이동">
                     <img src="./images/img-work-pub2.png" alt="">
                   </a>
                   <span class="txt">
@@ -111,7 +122,8 @@
                   </span>
                 </li>
                 <li class="item">
-                  <a class="img" href="https://urimalgosa.kbs.co.kr/ep5/index.html" target="_blank" title="kbs 5회 우리말 인증고사 이동">
+                  <a class="img" href="https://urimalgosa.kbs.co.kr/ep5/index.html" target="_blank"
+                    title="kbs 5회 우리말 인증고사 이동">
                     <img src="./images/img-work-pub3.png" alt="">
                   </a>
                   <span class="txt">
@@ -123,7 +135,8 @@
             <div class="swiper-slide">
               <ul class="items">
                 <li class="item">
-                  <a class="img" href="http://www.hschool.co.kr/test_sixteen/06/project02/index.html" target="_blank" title="현대카드 클론 프로젝트 이동">
+                  <a class="img" href="http://www.hschool.co.kr/test_sixteen/06/project02/index.html" target="_blank"
+                    title="현대카드 클론 프로젝트 이동">
                     <img src="./images/img-work-pub4.png" alt="">
                   </a>
                   <span class="txt">
@@ -131,7 +144,8 @@
                   </span>
                 </li>
                 <li class="item">
-                  <a class="img" href="http://www.hschool.co.kr/test_sixteen/06/project04/index.html" target="_blank" title="탐앤탐스 클론 프로젝트 이동">
+                  <a class="img" href="http://www.hschool.co.kr/test_sixteen/06/project04/index.html" target="_blank"
+                    title="탐앤탐스 클론 프로젝트 이동">
                     <img src="./images/img-work-pub5.png" alt="">
                   </a>
                   <span class="txt">
@@ -139,7 +153,8 @@
                   </span>
                 </li>
                 <li class="item">
-                  <a class="img" href="http://www.hschool.co.kr/test_sixteen/06/project05/index.html" target="_blank" title="한화이글스 클론 프로젝트 이동">
+                  <a class="img" href="http://www.hschool.co.kr/test_sixteen/06/project05/index.html" target="_blank"
+                    title="한화이글스 클론 프로젝트 이동">
                     <img src="./images/img-work-pub6.png" alt="">
                   </a>
                   <span class="txt">
@@ -165,7 +180,8 @@
             <div class="swiper-slide">
               <ul class="items">
                 <li class="item">
-                  <a href="https://helpful-semolina-132a05.netlify.app/#/main" class="img" target="_blank" title="디지털장비 관리 시스템 이동">
+                  <a href="https://helpful-semolina-132a05.netlify.app/#/main" class="img" target="_blank"
+                    title="디지털장비 관리 시스템 이동">
                     <img src="./images/img-work-fe1.png" alt="">
                   </a>
                   <span class="txt">
@@ -173,7 +189,8 @@
                   </span>
                 </li>
                 <li class="item">
-                  <a href="https://enchanting-faun-e565e0.netlify.app/#/" target="_blank" class="img" title="영화검색 사이트 이동">
+                  <a href="https://enchanting-faun-e565e0.netlify.app/#/" target="_blank" class="img"
+                    title="영화검색 사이트 이동">
                     <img src="./images/img-work-fe2.png" alt="">
                   </a>
                   <span class="txt">
@@ -200,36 +217,39 @@
     <div class="cnt05 work access" id="access">
       <div class="wrap">
         <h2 class="tit">ACCESSIBILITY PROJECT</h2>
-          <ul class="items">
-            <li class="item">
-              <div class="txt">
-                <p> 웹의 기본적이고 중요한 목적은 사용자의 환경이 어떠하든 사용자에게 정보를 전달하는 것입니다.
-                  그러나 많은 웹사이트는 이를 간과하고 화려한 인터렉션을 선보이기 급급합니다.
-                </p>
-                <p> 저는 누구나 차별없이 편의를 위해서 정보에 접근해야 된다고 생각하여 웹 접근성 준수에 공을 들입니다.</p>
-                <p>작업한 모든 프로젝트는 접근성을 준수하여 작성하였으며, 대표적으로 두 프로젝트는 기준 미달의 준수율을 95%이상 개선 시켰습니다.</p>
-              </div>
-            </li>
-            <li class="item">
-              <span class="img">
-                <img src="./images/img-work-acce1.png" alt="">
-              </span>
-            </li>
-            <li class="item">
-              <span class="img">
-                <img src="./images/img-work-acce2.png" alt="">
-              </span>
-            </li>
-          </ul>
+        <ul class="items">
+          <li class="item">
+            <div class="txt">
+              <p> 웹의 기본적이고 중요한 목적은 사용자의 환경이 어떠하든 사용자에게 정보를 전달하는 것입니다.
+                그러나 많은 웹사이트는 이를 간과하고 화려한 인터렉션을 선보이기 급급합니다.
+              </p>
+              <p> 저는 누구나 차별없이 편의를 위해서 정보에 접근해야 된다고 생각하여 웹 접근성 준수에 공을 들입니다.</p>
+              <p>작업한 모든 프로젝트는 접근성을 준수하여 작성하였으며, 대표적으로 두 프로젝트는 기준 미달의 준수율을 95%이상 개선 시켰습니다.</p>
+            </div>
+          </li>
+          <li class="item">
+            <span class="img">
+              <img src="./images/img-work-acce1.png" alt="">
+            </span>
+          </li>
+          <li class="item">
+            <span class="img">
+              <img src="./images/img-work-acce2.png" alt="">
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="cnt06" id="contact">
       <div class="wrap">
         <h2 class="tit">CONTACT</h2>
         <ul class="items">
-          <li class="item"><a href="https://github.com/busy-joj" target="_blank"><img src="./images/git_icon.svg" alt=""> <span>github</span></a></li>
-          <li class="item"><a href="https://busy-joj.github.io/" target="_blank"><img src="./images/note_icon.svg" alt=""> <span>블로그</span></a></li>
-          <li class="item"><a href="mailto:busy.joj@gmail.com"><img src="./images/mail_icon.svg" alt=""><span>email</span></a></li>
+          <li class="item"><a href="https://github.com/busy-joj" target="_blank"><img src="./images/git_icon.svg"
+                alt=""> <span>github</span></a></li>
+          <li class="item"><a href="https://busy-joj.github.io/" target="_blank"><img src="./images/note_icon.svg"
+                alt=""> <span>블로그</span></a></li>
+          <li class="item"><a href="mailto:busy.joj@gmail.com"><img src="./images/mail_icon.svg"
+                alt=""><span>email</span></a></li>
         </ul>
       </div>
     </div>

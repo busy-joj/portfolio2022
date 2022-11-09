@@ -6,7 +6,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-
+    width:100%;
     &-txt {
         width: 50%;
         padding: 0 0 0 30px;
@@ -26,10 +26,11 @@ body {
     }
 
     &-bg {
-        max-width: 53%;
+        flex-grow: 1;
         position: relative;
-        display: flex;
-
+        height:100%;
+        transform-style: preserve-3d;
+        // transform:rotateX(75deg);
         &::before {
             position: absolute;
             content: '';
@@ -53,5 +54,23 @@ body {
             border-radius: 50%;
             filter: blur(100px);
         }
+        .item{position:absolute;top:50%;left:50%;border:1px solid rgab(255,255,255,.2);border-radius:50%;transform:rotateX(0deg);transform-style:preserve-3d;animation-name:spin;animation-iteration-count:infinite;animation-timing-function:linear;}
     }
+    .sun{height:120px;width:120px;border-radius:50%;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#ff0;}
+    .mercury{height:20px;width:20px;background: #18B2DE;border-radius:50%;position:absolute;left:43%;top:42%;transform:translate(-50%,-50%);animation:orbit2 2s linear infinite;
+        p{color:#fff;position:absolute;left:-62px;top:-11px;}
+    }
+    
+
 }
+@keyframes orbit2{
+    from{transform:rotate(0deg)translateX(70px)rotate(0deg)}
+    to{transform:rotate(360deg)translateX(70px)rotate(-360deg)}
+}
+
+@keyframes invert {
+    0% {
+      transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+  
+    100% {
+      transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }

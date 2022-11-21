@@ -270,16 +270,72 @@ body {
             }
         }
 
-        .points {
-            .point {
+        .clipboard {
+            position: absolute;
+
+            .clip {
                 width: 450px;
                 height: 450px;
                 background: linear-gradient(270deg, rgba(24, 178, 222, 0.2) 0%, rgba(251, 55, 255, 0.2) 100%);
                 ;
                 border: 1px solid linear-gradient(270deg, rgba(24, 178, 222, 0.2) 0%, rgba(251, 55, 255, 0.2) 100%);
                 clip-path: polygon(50% 0, 85.5% 15%, 100% 50%, 85.2% 85.6%, 50% 100%, 15% 85.5%, 0 50%, 15% 15%);
-                ;
-                ;
+
+
+            }
+
+            .point {
+                display: flex;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+
+                .p {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: #FB37FF;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 50%;
+
+                    &:nth-child(1) {
+                        top: 0;
+                    }
+
+                    &:nth-child(2) {
+                        bottom: 0;
+                    }
+
+                    &:nth-child(3) {
+                        right: 0;
+                    }
+
+                    &:nth-child(4) {
+                        left: 0;
+                    }
+
+                    &:nth-child(5) {
+                        top: 60px;
+                        right: 60px;
+                    }
+
+                    &:nth-child(6) {
+                        top: 60px;
+                        left: 60px;
+                    }
+
+                    &:nth-child(7) {
+                        bottom: 60px;
+                        left: 60px;
+                    }
+
+                    &:nth-child(8) {
+                        bottom: 60px;
+                        right: 60px;
+                    }
+                }
             }
 
         }

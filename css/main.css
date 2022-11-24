@@ -52,6 +52,15 @@ body {
   border-radius: 50%;
   filter: blur(100px);
 }
+.main-bg .tagcloud {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  width: 50%;
+}
+.main-bg .tagcloud--item:hover {
+  color: #36454F;
+}
 .main-bg .visual {
   aspect-ratio: 1/1;
   position: relative;
@@ -72,6 +81,8 @@ body {
   bottom: 0;
   margin: auto;
   border-radius: 50%;
+  -webkit-animation: orbit1 10s infinite alternate;
+          animation: orbit1 10s infinite alternate;
   transform-style: preserve-3d;
 }
 .main-bg .visual-item .point {
@@ -85,6 +96,8 @@ body {
   left: -10px;
   margin: auto;
   transform: rotateX(90deg);
+  -webkit-animation: invert 10s infinite alternate;
+          animation: invert 10s infinite alternate;
 }
 .main-bg .visual #item1 .visual-item {
   width: 100%;
@@ -155,6 +168,38 @@ body {
   }
   100% {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+@-webkit-keyframes skill-scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes skill-scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes skill-pt {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes skill-pt {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
 #skill .tit {
@@ -234,15 +279,14 @@ body {
 }
 #skill .skill-box .circles .item-line:nth-child(2),
 #skill .skill-box .lines .item-line:nth-child(2) {
-  transform: rotate(45deg);
+  transform: rotate(60deg);
 }
 #skill .skill-box .circles .item-line:nth-child(3),
 #skill .skill-box .lines .item-line:nth-child(3) {
-  transform: rotate(90deg);
+  transform: rotate(120deg);
 }
-#skill .skill-box .circles .item-line:nth-child(4),
-#skill .skill-box .lines .item-line:nth-child(4) {
-  transform: rotate(135deg);
+#skill .skill-box .lines {
+  height: 510px;
 }
 #skill .skill-box .clipboard {
   position: absolute;
@@ -255,15 +299,17 @@ body {
   width: 450px;
   height: 450px;
   background: radial-gradient(rgba(255, 255, 255, 0.001), 89%, #FB37FF);
-  -webkit-clip-path: polygon(50% 0, 85.5% 15%, 100% 50%, 85.2% 85.6%, 50% 100%, 15% 85.5%, 0 50%, 15% 15%);
-          clip-path: polygon(50% 0, 85.5% 15%, 100% 50%, 85.2% 85.6%, 50% 100%, 15% 85.5%, 0 50%, 15% 15%);
+  -webkit-clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
+          clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
+  -webkit-animation: skill-scale 5s;
+          animation: skill-scale 5s;
 }
 #skill .skill-box .clipboard .clip-inner {
   position: absolute;
   width: 99.2%;
   height: 99.2%;
-  -webkit-clip-path: polygon(50% 0, 85.5% 15%, 100% 50%, 85.2% 85.6%, 50% 100%, 15% 85.5%, 0 50%, 15% 15%);
-          clip-path: polygon(50% 0, 85.5% 15%, 100% 50%, 85.2% 85.6%, 50% 100%, 15% 85.5%, 0 50%, 15% 15%);
+  -webkit-clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
+          clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
   background: linear-gradient(270deg, rgba(24, 178, 222, 0.225) 0%, rgba(251, 55, 255, 0.2) 100%);
 }
 #skill .skill-box .clipboard .point {
@@ -284,30 +330,24 @@ body {
   border-radius: 50%;
 }
 #skill .skill-box .clipboard .point .p:nth-child(1) {
-  top: 0;
+  top: 43px;
+  left: 117px;
 }
 #skill .skill-box .clipboard .point .p:nth-child(2) {
-  bottom: 0;
+  top: 44px;
+  right: 118px;
 }
 #skill .skill-box .clipboard .point .p:nth-child(3) {
-  right: 0;
+  left: 14px;
 }
 #skill .skill-box .clipboard .point .p:nth-child(4) {
-  left: 0;
+  right: 40px;
 }
 #skill .skill-box .clipboard .point .p:nth-child(5) {
-  top: 60px;
-  right: 60px;
+  bottom: 32px;
+  left: 112px;
 }
 #skill .skill-box .clipboard .point .p:nth-child(6) {
-  top: 60px;
-  left: 60px;
-}
-#skill .skill-box .clipboard .point .p:nth-child(7) {
-  bottom: 60px;
-  left: 60px;
-}
-#skill .skill-box .clipboard .point .p:nth-child(8) {
-  bottom: 60px;
-  right: 60px;
+  bottom: 63px;
+  right: 128px;
 }/*# sourceMappingURL=main.css.map */

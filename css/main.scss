@@ -32,7 +32,7 @@ body {
         position: relative;
         height: 100%;
         transform-style: preserve-3d;
-
+        perspective: 750px;
 
         &::before {
             position: absolute;
@@ -59,16 +59,14 @@ body {
         }
 
         .tagcloud {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif;  
             font-size: 20px;
             margin: auto;
             width: 50%;
-        }
-
-        .tagcloud--item:hover {
+          }
+          .tagcloud--item:hover {
             color: #36454F;
-        }
-
+          }
         .visual {
             aspect-ratio: 1/1;
             position: relative;
@@ -104,22 +102,22 @@ body {
                     margin: auto;
                     transform: rotateX(90deg);
                     animation: invert 10s infinite alternate;
+
                 }
             }
 
             #item1 {
                 transform: rotateX(75deg)rotateY(-20deg);
-
                 .visual-item {
                     width: 110%;
                     height: 110%;
                     border: 3px solid rgba(255, 255, 255, .06);
-                    left: -20px;
-
-                    .point {
-                        left: -10px;
+                    left:-20px;
+                    .point{
+                        left:-10px;
                     }
                 }
+
             }
 
             #item2 {
@@ -129,14 +127,17 @@ body {
                     width: 100%;
                     height: 100%;
                     border: 3px solid rgba(255, 255, 255, .06);
-
-                    // animation-delay: 2s;
-                    .point {
-                        right: -10px;
+                    .point{
+                        right:-10px;
                     }
                 }
+
             }
+
+            
         }
+
+
     }
 
 
@@ -177,7 +178,6 @@ body {
         transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
     }
 }
-
 @keyframes skill-scale {
     from {
         transform: scale(0)
@@ -187,8 +187,15 @@ body {
         transform: scale(1)
     }
 }
+@keyframes skill-pt {
+    from {
+        transform: scale(0)
+    }
 
-@keyframes skill-pt {}
+    to {
+        transform: scale(1)
+    }
+}
 
 #skill {
     .tit {
@@ -199,7 +206,6 @@ body {
 
         &-sub {}
     }
-
     .skill-box {
         width: 100%;
         height: 600px;
@@ -279,33 +285,24 @@ body {
                 }
             }
         }
-
-        .lines {
-            height: 510px;
-        }
-
+        .lines{height:510px;}
         .clipboard {
             position: absolute;
-
+            
             .clip {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: relative;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                position:relative;
                 width: 450px;
                 height: 450px;
-                background: radial-gradient(rgba(255, 255, 255, .001), 89%, #FB37FF);
-                clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
-
-                &-inner {
-                    position: absolute;
-                    width: 99.2%;
-                    height: 99.2%;
-                    clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
-                    background: linear-gradient(270deg, rgba(24, 178, 222, 0.225) 0%, rgba(251, 55, 255, 0.2) 100%);
+                background: radial-gradient(rgba(255,255,255,.001),89%, #FB37FF);
+                clip-path:polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
+                &-inner{
+                    position:absolute;width:99.2%;height:99.2%;clip-path:polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);background: linear-gradient(270deg, rgba(24, 178, 222, 0.225) 0%, rgba(251, 55, 255, 0.2) 100%);
                 }
+                animation: skill-scale 5s;
 
-                animation: skill-scale 2.5s;
             }
 
             .point {
@@ -320,7 +317,7 @@ body {
                     position: absolute;
                     width: 8px;
                     height: 8px;
-                    opacity: .9;
+                    opacity:.9;
                     background: #FB37FF;
                     border: 1px solid #FFFFFF;
                     border-radius: 50%;

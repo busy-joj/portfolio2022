@@ -1,1 +1,44 @@
-/* No CSS *//*# sourceMappingURL=style2.css.map */
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #000;
+  pointer-events: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header.on {
+  width: 45%;
+  -webkit-transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1s;
+  transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1s;
+}
+
+.content {
+  width: 55%;
+  margin-left: 45%;
+  height: 100vh;
+}
+
+.content .section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+/*# sourceMappingURL=style2.css.map */

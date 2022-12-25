@@ -18,9 +18,9 @@
   height: 100%;
   padding: 30px;
   background-color: #000;
-  pointer-events: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 10;
 }
 
 .header.on {
@@ -31,8 +31,57 @@
 
 .nav {
   position: absolute;
-  top: 0;
+  top: 5%;
   right: 0;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nav .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 54px;
+  height: 85px;
+  background: rgba(209, 213, 159, 0.9);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav .item:hover {
+  background: #d1d59f;
+  color: white;
+}
+
+.nav .item.active {
+  width: 60px;
+  font-size: 12px;
+  background: white;
+  color: #d1d59f;
+  border: 4px solid #d1d59f;
+  border-right: none;
 }
 
 .content {

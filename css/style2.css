@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 30px 60px;
   background-color: #2E304B;
   pointer-events: none;
   box-sizing: border-box;
@@ -25,6 +25,37 @@
 .header.on {
   width: 45%;
   transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1s;
+}
+.header .tit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+.header .tit h1 {
+  font-size: 42px;
+  color: #d1d59f;
+}
+.header .tit-sub {
+  font-size: 18px;
+  color: #d1d59f;
+  line-height: 1.8rem;
+}
+.header .tit .btn {
+  width: 220px;
+  padding: 20px;
+  border-radius: 40px;
+  border: 2px solid #d1d59f;
+  background: transparent;
+  color: #d1d59f;
+  margin-top: 30px;
+  pointer-events: auto;
+}
+.header .tit .btn:hover {
+  background: #d1d59f;
+  pointer-events: auto;
+  color: #2E304B;
 }
 
 .nav {

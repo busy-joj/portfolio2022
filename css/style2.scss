@@ -1,5 +1,7 @@
 @import "./mixin";
 
+$main: #d1d59f;
+$main-sub: #2E304B;
 .page {
     position: absolute;
     top: 0;
@@ -18,15 +20,23 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 30px;
-    background-color: #000;
-    // pointer-events: none;
+    padding: 30px 60px;
+    background-color: $main-sub;
+    pointer-events: none;
     box-sizing: border-box;
     z-index: 10;
 
     &.on {
         width: 45%;
         transition: width 1.5s cubic-bezier(.23, 1, .32, 1) 1s;
+    }
+    .tit{
+        display:flex;flex-direction:column;height:100%;justify-content:center;gap:20px;
+        h1{font-size:42px;color:$main;}
+        &-sub{font-size:18px;color:$main;line-height:1.8rem;}
+        .btn{width:220px;padding:20px;border-radius:40px;border:2px solid $main;background:transparent;color:$main;margin-top:30px;pointer-events: auto;
+            &:hover{background:$main;pointer-events: auto;color:$main-sub;}
+        }
     }
 }
 
@@ -54,6 +64,7 @@
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
+        pointer-events: auto;
 
         &:hover {
             background: rgba(209, 213, 159, 1);
@@ -65,7 +76,7 @@
             font-size: 12px;
             background: rgba(255, 255, 255, 1);
             color: rgba(209, 213, 159, 1);
-            border: 4px solid #d1d59f;
+            border: 4px solid $main;
             border-right: none;
         }
 
@@ -85,4 +96,8 @@
         height: 100vh;
         background: #fff;
     }
+}
+
+#main{
+    background: #d1d59f;
 }

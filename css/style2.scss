@@ -137,6 +137,25 @@ $main-sub: #2E304B;
 
 #main {
     background: #d1d59f;
+
+    .img-box {
+        position: relative;
+        width: 90%;
+        height: 100%;
+        background: rgba(255, 255, 255, .8);
+        border-top-left-radius: 45%;
+        border-top-right-radius: 45%;
+        margin: 0 auto;
+
+        img {
+            position: absolute;
+            width: 70%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
 }
 
 .slide {

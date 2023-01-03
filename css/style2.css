@@ -132,28 +132,30 @@
 .content {
   width: 55%;
   margin-left: 45%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .content .section {
-  position: relative;
   width: 100%;
   min-height: 100vh;
   background: #fff;
-  padding: 100px;
+  padding: 12%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .content .section h2 {
-  font-size: 38px;
+  font-size: 48px;
   margin-bottom: 40px;
   color: #2E304B;
 }
 
 #main {
+  position: -webkit-sticky;
+  position: sticky;
   background: #d1d59f;
   height: 100vh;
+  top: 0;
 }
 
 #main .img-box {
@@ -175,15 +177,34 @@
   margin: auto;
 }
 
+#about {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#work {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #d1d59f;
+  padding: 12% 0;
+}
+
+#work h2 {
+  padding: 0 12%;
+}
+
+#contact {
+  position: relative;
+}
+
 .list-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 60px;
+  position: relative;
+  width: 100%;
 }
 
 .list-wrap.row {
@@ -194,7 +215,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 0;
+  padding: 150px 0;
 }
 
 .list-item .img-box {
@@ -283,8 +304,16 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 2px solid #d1d59f;
+  border-top: 2px solid #2E304B;
   padding: 15px 0;
+}
+
+.list-item.swiper-slide .img-box {
+  aspect-ratio: 3/3.5;
+}
+
+.list-item.swiper-slide.swiper-slide-active .overlay {
+  opacity: 1;
 }
 
 .list-item.circle {
@@ -311,5 +340,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
+}
+
+.mySwiper {
+  padding: 0 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style2.css.map */

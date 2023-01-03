@@ -117,18 +117,17 @@ $main-sub: #2E304B;
 .content {
     width: 55%;
     margin-left: 45%;
-    height: 100vh;
+    min-height: 100vh;
 
     .section {
-        position: relative;
         width: 100%;
         min-height: 100vh;
         background: #fff;
-        padding: 100px;
+        padding: 12%;
         box-sizing: border-box;
 
         h2 {
-            font-size: 38px;
+            font-size: 48px;
             margin-bottom: 40px;
             color: $main-sub;
         }
@@ -136,8 +135,10 @@ $main-sub: #2E304B;
 }
 
 #main {
-    background: #d1d59f;
+    position: sticky;
+    background: $main;
     height: 100vh;
+    top: 0;
 
     .img-box {
         position: relative;
@@ -159,16 +160,36 @@ $main-sub: #2E304B;
     }
 }
 
+#about {
+    position: sticky;
+    top: 0;
+}
+
+#work {
+    position: sticky;
+    top: 0;
+    background: $main;
+    padding: 12% 0;
+
+    h2 {
+        padding: 0 12%;
+    }
+}
+
+#contact {
+    position: relative;
+}
+
 .list {
     &-wrap {
         display: flex;
-        flex-direction: column;
-        gap: 60px;
+        position: relative;
+        width: 100%;
 
         &.row {
             flex-direction: row;
             justify-content: space-between;
-            padding: 40px 0;
+            padding: 150px 0;
         }
     }
 
@@ -242,8 +263,20 @@ $main-sub: #2E304B;
         .desc {
             display: flex;
             justify-content: space-between;
-            border-top: 2px solid $main;
+            border-top: 2px solid $main-sub;
             padding: 15px 0;
+        }
+
+        &.swiper-slide {
+            .img-box {
+                aspect-ratio: 3/3.5;
+            }
+
+            &.swiper-slide-active {
+                .overlay {
+                    opacity: 1;
+                }
+            }
         }
 
         &.circle {
@@ -270,4 +303,10 @@ $main-sub: #2E304B;
             }
         }
     }
+}
+
+
+.mySwiper {
+    padding: 0 5%;
+    box-sizing: border-box;
 }

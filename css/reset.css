@@ -24,6 +24,10 @@ a {
   color: #181818;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+}
+
 .blind {
   position: absolute !important;
   width: 1px !important;
@@ -98,4 +102,38 @@ a {
   src: local('GmarketSans'),
     url('../fonts/GmarketSansLight.otf') format('opentype'),
     url('../fonts/GmarketSansLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 700;
+  font-display: fallback;
+  src: local('Gotham'),
+    url('../fonts/Gotham-black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 600;
+  font-display: fallback;
+  src: local('Gotham'),
+    url('../fonts/Gotham-Bold.otf') format('opentype'),
+    url('../fonts/GothamBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Gotham'),
+    url('../fonts/GothamMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 200;
+  font-display: fallback;
+  src: local('Gotham'),
+    url('../fonts/Gotham-Light.otf') format('opentype'),
+    url('../fonts/GothamLight.ttf') format('truetype');
 }

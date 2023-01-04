@@ -370,6 +370,7 @@
 }
 
 .content .section h2 {
+  font-family: 'Gotham';
   font-size: 48px;
   margin-bottom: 40px;
   color: #d1d59f;
@@ -536,10 +537,6 @@
 
 .list-item.swiper-slide .img-box {
   aspect-ratio: 3/3.5;
-}
-
-.list-item.swiper-slide.swiper-slide-active .overlay {
-  opacity: 1;
 }
 
 .list-item.circle {

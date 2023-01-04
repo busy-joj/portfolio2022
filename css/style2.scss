@@ -177,8 +177,6 @@ $main-sub: #2E304B;
         }
 
     }
-
-
 }
 
 .content {
@@ -194,6 +192,7 @@ $main-sub: #2E304B;
         box-sizing: border-box;
 
         h2 {
+            font-family: 'Gotham';
             font-size: 48px;
             margin-bottom: 40px;
             color: $main;
@@ -338,12 +337,6 @@ $main-sub: #2E304B;
         &.swiper-slide {
             .img-box {
                 aspect-ratio: 3/3.5;
-            }
-
-            &.swiper-slide-active {
-                .overlay {
-                    opacity: 1;
-                }
             }
         }
 

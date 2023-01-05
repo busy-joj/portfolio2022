@@ -39,7 +39,7 @@ $main-sub: #2E304B;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 250px 60px;
+    padding: 200px 60px;
     background-color: $main-sub;
     pointer-events: none;
     box-sizing: border-box;
@@ -60,7 +60,7 @@ $main-sub: #2E304B;
     }
 
     .tit {
-        width: 565px;
+        width: 470px;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -70,7 +70,7 @@ $main-sub: #2E304B;
         &-big {
             display: flex;
             justify-content: space-between;
-            font-size: 82px;
+            font-size: 78px;
             color: $main;
 
             span {
@@ -101,7 +101,7 @@ $main-sub: #2E304B;
         }
 
         &-sub {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 300;
             color: $main;
             line-height: 1.8rem;
@@ -193,8 +193,8 @@ $main-sub: #2E304B;
 
         h2 {
             font-family: 'Gotham';
-            font-size: 48px;
-            margin-bottom: 40px;
+            font-size: 42px;
+            margin-bottom: 50px;
             color: $main;
         }
     }

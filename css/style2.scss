@@ -19,6 +19,8 @@ $main-sub: #2E304B;
     overflow-x: hidden;
     overflow-y: auto;
     letter-spacing: -0.025em;
+    scroll-snap-type: y mandatory;
+    will-change: content;
 }
 
 @keyframes header {
@@ -216,6 +218,7 @@ $main-sub: #2E304B;
         background: #fff;
         padding: 12% 10%;
         box-sizing: border-box;
+        scroll-snap-align: end;
 
         h2 {
             font-family: 'Gotham';

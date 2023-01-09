@@ -20,12 +20,11 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-  <script src="./js/script2.js"></script>
+  <script src="./js/script_0109.js"></script>
 </head>
 
 <body>
-  <div class="page no-scroll">
-
+  <div class="page no-scroll" id="page">
     <header class="header">
       <nav class="nav">
         <ul class="nav-list">
@@ -74,7 +73,7 @@
         <button class="btn">Let's work together</button>
       </div>
     </header><!-- .header -->
-    <div class="content">
+    <div class="content" id="content">
       <div class="section" id="main">
         <h2 class="blind">Home</h2>
         <div class="img-box">
@@ -85,9 +84,9 @@
           <img src="./images/ico-mouse.png" alt="">
         </div>
       </div>
-      <div class="section" id="about">
+      <div class="section pinned-section" id="about">
         <h2>About <span class="info">Please swipe or drag</span></h2>
-        <div class="swiper ySwiper slide-page">
+        <div class="swiper ySwiper slide-page" id="scroll-content">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <h3>Hello, </h3>

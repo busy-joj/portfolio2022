@@ -18,9 +18,6 @@
 
   <script src="./js/jquery-2.2.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-  <script src="./js/script_0109.js"></script>
 </head>
 
 <body>
@@ -84,7 +81,7 @@
           <img src="./images/ico-mouse.png" alt="">
         </div>
       </div>
-      <div class="section pinned-section" id="about">
+      <div class="section" id="about">
         <h2>About <span class="info">Please swipe or drag</span></h2>
         <div class="swiper ySwiper slide-page" id="scroll-content">
           <div class="swiper-wrapper">
@@ -122,7 +119,7 @@
                   ETC : Git &#183; Figma &#183; Zeplin &#183; photoshop
                 </li>
               </ul>
-            </div>
+            </div><!-- .swiper-slide -->
             <div class="swiper-slide">
               <h3>Careers</h3>
               <div class="tit-box">
@@ -166,12 +163,11 @@
                   <li class="item"><img src="./images/img-work-pub5.png" alt=""></li>
                 </ul>
               </div>
-            </div>
-          </div>
+            </div><!-- .swiper-slide -->
+          </div><!-- .swiper-wrapper -->
           <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
+        </div><!-- .swiper -->
+      </div><!-- .section -->
       <div class="section" id="work">
         <h2>Work</h2>
         <div class="list">
@@ -190,7 +186,7 @@
                   <span class="txt">Vue.js</span>
                   <span class="txt">Admin System</span>
                 </div>
-              </div>
+              </div><!-- .swiper-slide -->
               <div class="swiper-slide list-item">
                 <div class="img-box">
                   <img class="img" src="./images/img-work-fe2.png" alt="">
@@ -204,7 +200,7 @@
                   <span class="txt">Vue.js</span>
                   <span class="txt">Movie Web</span>
                 </div>
-              </div>
+              </div><!-- .swiper-slide -->
               <div class="swiper-slide list-item">
                 <div class="img-box">
                   <img class="img" src="./images/img-work-fe2.png" alt="">
@@ -218,7 +214,7 @@
                   <span class="txt">Vue.js</span>
                   <span class="txt">weather Web</span>
                 </div>
-              </div>
+              </div><!-- .swiper-slide -->
               <div class="swiper-slide list-item">
                 <div class="img-box">
                   <img class="img" src="./images/img-work-fe1.png" alt="">
@@ -232,33 +228,11 @@
                   <span class="txt">Vue.js</span>
                   <span class="txt">Covid-19 Web</span>
                 </div>
-              </div>
-            </div>
-            <!-- <div class="swiper-pagination"></div> -->
-          </div>
-          <!-- 퍼블리싱, 프론트엔드 전용 -->
-
-          <!-- <div class="list-wrap"> -->
-          <!-- <div class="list-item">
-              <div class="txt">.01</div>
-              <div class="img-box">
-                <img class="img" src="./images/img-work-fe1.png" alt="">
-                <div class="overlay">
-                  <span class="txt">The Absck ekclsodjfjdk
-                    dkjfklsdjlfkajsdlfas</span>
-                  <a class="btn" href="#none">View More</a>
-                </div>
-              </div>
-              <div class="desc">
-                <span class="txt">React.js</span>
-                <span class="txt">weather App</span>
-              </div>
-            </div>  --><!--.list-item -->
-          <!-- 단독 리스트 전용 -->
-          <!-- </div> -->
-          <!--.list-wrap -->
+              </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+          </div><!-- .swiper -->
         </div>
-      </div>
+      </div><!-- .section -->
       <div class="section" id="contact">
         <h2>Contact</h2>
         <div class="list">
@@ -293,9 +267,12 @@
           Thank you for visiting! <br>
         </p>
       </div> <!-- #contack.section -->
+    </div><!-- .content -->
+  </div><!-- .page -->
 
-    </div>
-  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="./js/script_0109.js"></script>
 </body>
 
 </html>

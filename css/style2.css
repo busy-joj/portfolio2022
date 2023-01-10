@@ -15,9 +15,6 @@
   overflow-x: hidden;
   overflow-y: auto;
   letter-spacing: -0.025em;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  will-change: content;
 }
 
 @-webkit-keyframes header {
@@ -423,7 +420,6 @@
   padding: 12% 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scroll-snap-align: end;
 }
 
 .content .section h2 {

@@ -1,3 +1,5 @@
+
+
 $(function () {
     setTimeout(function () {
         $('.header').addClass('on');
@@ -22,4 +24,23 @@ $(function () {
             el: ".swiper-pagination",
         },
     });
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray(".page .section").forEach((panel, i) => {
+        const startPoint = i ? "top bottom" : "top top";
+        const endPoint = i ? "top top" : "bottom top";
+
+        ScrollTrigger.create({
+            trigger: panel,
+            start: startPoint,
+            end: endPoint,
+            markers: { startColor: "fuchsia", endColor: "cyan", indent: 200 * i },
+            id: i,
+            snap: true
+        });
+        console.log(panel, i)
+    });
+
+
+
 })

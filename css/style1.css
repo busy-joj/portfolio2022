@@ -1,0 +1,143 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+}
+
+.page.no-scroll {
+  overflow: hidden !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2E304B;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+header.on {
+  width: 45%;
+  -webkit-transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1s;
+  transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1s;
+}
+
+header.on nav {
+  opacity: 1;
+  -webkit-transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1s;
+  transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1s;
+}
+
+header.on .btn {
+  pointer-events: auto !important;
+}
+
+header .nav {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  opacity: 0;
+}
+
+header .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .nav .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 54px;
+  height: 85px;
+  background: rgba(209, 213, 159, 0.9);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  pointer-events: auto;
+}
+
+header .nav .item:hover {
+  background: #d1d59f;
+  color: white;
+}
+
+header .nav .active .item {
+  width: 60px;
+  font-size: 12px;
+  background: white;
+  color: #d1d59f;
+  border: 4px solid #d1d59f;
+  border-right: none;
+}
+
+.div {
+  position: absolute;
+  right: 0;
+  background: #000;
+  width: 60%;
+}
+
+section {
+  position: relative;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  line-height: 100vh;
+}
+
+.box {
+  position: relative;
+  background: #69338d;
+  width: 80%;
+  height: 100vh;
+}
+
+.box.last {
+  position: relative;
+  z-index: 1000;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: #cf3535;
+}
+
+.blue {
+  background-color: blue;
+  height: 400vh;
+}
+
+.gray {
+  background-color: gray;
+}
+/*# sourceMappingURL=style1.css.map */

@@ -3,19 +3,13 @@
 $main: #d1d59f;
 $main-sub: #2E304B;
 
-body,
-* {
-    margin: 0;
-    padding: 0
+.no-scroll {
+    overflow: hidden !important;
 }
 
 .page {
     position: absolute;
     width: 100%;
-
-    &.no-scroll {
-        overflow: hidden !important;
-    }
 }
 
 header {
@@ -92,13 +86,13 @@ header {
     position: absolute;
     right: 0;
     background: #000;
-    width: 60%;
+    width: 55%;
 }
 
 section {
     position: relative;
     right: 0;
-    height: 100vh;
+    height: 100vh !important;
     width: 100%;
     text-align: center;
     line-height: 100vh;
@@ -108,8 +102,8 @@ section {
 .box {
     position: relative;
     background: rgb(105, 51, 141);
-    width: 80%;
-    height: 100vh;
+    width: 100%;
+    height: 80vh;
 
     &.last {
         position: relative;
@@ -131,9 +125,12 @@ section {
 
 .blue {
     background-color: blue;
-    height: 400vh;
+    width: 400%;
+    .inner{width: 400%;display:flex;}
 }
 
 .gray {
     background-color: gray;
 }
+
+#about{display:flex;}

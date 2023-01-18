@@ -2,34 +2,38 @@
 $(function () {
     setTimeout(function () {
         $('.header').addClass('on');
-        $('.page').delay(500).removeClass('no-scroll');
+        $('body').delay(500).removeClass('no-scroll');
     }, 6400);
 
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+    // box in section pin
+    var $w = $('.panel.blue .inner').width();
+    gsap.from(".panel.blue .inner", {
+        scrollTrigger: {
+            trigger: ".panel.blue",
+            start: "top top",
+            end: "bottom top",
+            scrub: 1,
+            pin:true,
+            toggleActions: "restart pause reverse pause",
+            markers: true
+        },
+        x: -$w,
+        duration:10
+    });
+
     //section scroll
-    gsap.utils.toArray(".panel").forEach((panel, i) => {
+    gsap.utils.toArray(".snap").forEach((snap, i) => {
         const startPoint = i ? "top bottom" : "top top";
         const endPoint = i ? "top top" : "bottom top";
 
         ScrollTrigger.create({
-            trigger: panel,
+            trigger: snap,
             start: startPoint,
             end: endPoint,
-            markers: { startColor: "fuchsia", endColor: "cyan", indent: 200 * i },
             id: i,
             snap: true,
-        });
-    });
-
-    //box in section pin
-    gsap.utils.toArray(".box.reveal").forEach((box, i) => {
-        ScrollTrigger.create({
-            trigger: box,
-            start: "top top",
-            pin: true,
-            pinSpacing: false,
-            markers: true
         });
     });
 
@@ -40,8 +44,6 @@ $(function () {
             trigger: panel[i],
             start: 'top 50px',
             end: 'bottom 50px',
-            marker: true,
-            markers: { startColor: "yellow", endColor: "yellow" },
             toggleClass: { targets: a, className: "active" },
             onEnter: () => a.classList.add("active"),
             onLeaveBack: () => a.classList.remove("active")
@@ -50,10 +52,13 @@ $(function () {
 
     //nav click
     const navLinks = gsap.utils.toArray(".nav-list .item");
+    
     navLinks.forEach((link, i) => {
+        var $h = $('.panel').eq(i).height();
         link.addEventListener("click", e => {
             e.preventDefault();
-            gsap.to($(window), { scrollTo: panel[i].offsetTop });
+            gsap.to($(window), { scrollTo: panel[i].offsetTop});
+            console.log(link, panel[i].offsetTop, $h*i, i)
         });
     });
 })

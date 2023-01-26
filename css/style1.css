@@ -85,7 +85,7 @@ section {
 .box {
   position: relative;
   background: rgb(105, 51, 141);
-  width: 100%;
+  width: 80%;
   height: 80vh;
 }
 .box.last {
@@ -108,6 +108,7 @@ section {
 .blue .inner {
   width: 400%;
   display: flex;
+  background: yellow;
 }
 
 .gray {

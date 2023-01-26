@@ -102,7 +102,7 @@ section {
 .box {
     position: relative;
     background: rgb(105, 51, 141);
-    width: 100%;
+    width: 80%;
     height: 80vh;
 
     &.last {
@@ -126,7 +126,7 @@ section {
 .blue {
     background-color: blue;
     width: 400%;
-    .inner{width: 400%;display:flex;}
+    .inner{width: 400%;display:flex;background:yellow;}
 }
 
 .gray {

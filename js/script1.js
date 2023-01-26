@@ -13,7 +13,7 @@ $(function () {
         scrollTrigger: {
             trigger: ".panel.blue",
             start: "top top",
-            end: "bottom top",
+            end: "96% top",
             scrub: 1,
             pin:true,
             toggleActions: "restart pause reverse pause",
@@ -42,8 +42,9 @@ $(function () {
     gsap.utils.toArray('.nav-list li').forEach((a, i) => {
         ScrollTrigger.create({
             trigger: panel[i],
-            start: 'top 50px',
+            start: '20px 50px',
             end: 'bottom 50px',
+            markers: { startColor: "fuchsia", endColor: "cyan"},
             toggleClass: { targets: a, className: "active" },
             onEnter: () => a.classList.add("active"),
             onLeaveBack: () => a.classList.remove("active")

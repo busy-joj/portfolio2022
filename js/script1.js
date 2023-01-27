@@ -8,16 +8,17 @@ $(function () {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
     // box in section pin
-    var $w = $('.panel.blue .inner').width();
+    var $w = $('.panel.blue .inner').innerWidth();
     gsap.from(".panel.blue .inner", {
         scrollTrigger: {
             trigger: ".panel.blue",
             start: "top top",
-            end: "96% top",
+            end: "94% top",
             scrub: 1,
             pin:true,
+            pinSpacing: true,
             toggleActions: "restart pause reverse pause",
-            markers: true
+            markers: true,
         },
         x: -$w,
         duration:10
@@ -57,9 +58,14 @@ $(function () {
     navLinks.forEach((link, i) => {
         var $h = $('.panel').eq(i).height();
         link.addEventListener("click", e => {
+            if(link.getAttribute('href') == '#about'){
+                gsap.to($(window), { scrollTo: $h*i});
+                console.log('제발')
+            }else{
+                gsap.to($(window), { scrollTo: panel[i].offsetTop});
+                console.log(link, panel[i].offsetTop, $h*i, i)
+            }
             e.preventDefault();
-            gsap.to($(window), { scrollTo: panel[i].offsetTop});
-            console.log(link, panel[i].offsetTop, $h*i, i)
         });
     });
 })

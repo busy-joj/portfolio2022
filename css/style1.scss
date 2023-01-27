@@ -12,6 +12,43 @@ $main-sub: #2E304B;
     width: 100%;
 }
 
+@keyframes header {
+    0% {
+        opacity: 0;
+        transform: rotateX(-45deg) translateY(40px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0px);
+    }
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes mouse {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(10px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
 header {
     position: fixed;
     top: 0;
@@ -20,6 +57,7 @@ header {
     height: 100vh;
     width: 100%;
     z-index: 1;
+    padding:10% 0;
 
     &.on {
         width: 45%;
@@ -79,6 +117,81 @@ header {
             }
         }
 
+    }
+
+    .tit {
+        width: 476px;
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        gap: 40px;
+        margin: auto;
+
+        &-big {
+            display: flex;
+            justify-content: space-between;
+            font-size: 78px;
+            color: $main;
+
+            span {
+                font-family: 'Gotham';
+                font-weight: 700;
+            }
+
+            .wrap {
+                display: flex;
+                gap: 10px;
+            }
+
+            @for $i from 1 through 9 {
+                .item#{$i} {
+                    opacity: 0;
+                    animation: header .4s forwards;
+                    animation-delay: $i * .2s;
+                }
+            }
+
+            @for $i2 from 10 through 19 {
+                .item#{$i2} {
+                    opacity: 0;
+                    animation: header .4s forwards;
+                    animation-delay: $i2 * .2s + .5s;
+                }
+            }
+        }
+
+        &-sub {
+            font-size: 20px;
+            font-weight: 300;
+            color: $main;
+            line-height: 1.8rem;
+            opacity: 0;
+            padding-top: 20px;
+            animation: header 2s forwards;
+            animation-delay: 5.5s;
+        }
+
+        .btn {
+            width: 220px;
+            padding: 20px;
+            border-radius: 40px;
+            border: 2px solid $main;
+            background: transparent;
+            color: $main;
+            margin-top: 30px;
+            pointer-events: none;
+            margin-top: auto;
+            opacity: 0;
+            animation: header 2s forwards;
+            animation-delay: 5.5s;
+
+            &:hover {
+                background: $main;
+                pointer-events: auto;
+                color: $main-sub;
+                cursor: pointer;
+            }
+        }
     }
 }
 

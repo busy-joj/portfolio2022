@@ -1,11 +1,15 @@
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 $(function () {
+    //로딩시 header
     setTimeout(function () {
         $('.header').addClass('on');
-        $('body').delay(500).removeClass('no-scroll');
-    }, 6400);
+    }, 4500);
 
-    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    //로딩시 scroll
+    setTimeout(function () {
+        $('body').removeClass('no-scroll');
+    }, 6000);
 
     // box in section pin
     var $w = $('.panel.blue .inner').innerWidth();
@@ -54,13 +58,11 @@ $(function () {
 
     //nav click
     const navLinks = gsap.utils.toArray(".nav-list .item");
-    
     navLinks.forEach((link, i) => {
         var $h = $('.panel').eq(i).height();
         link.addEventListener("click", e => {
             if(link.getAttribute('href') == '#about'){
                 gsap.to($(window), { scrollTo: $h*i});
-                console.log('제발')
             }else{
                 gsap.to($(window), { scrollTo: panel[i].offsetTop});
                 console.log(link, panel[i].offsetTop, $h*i, i)

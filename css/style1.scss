@@ -146,16 +146,16 @@ header {
             @for $i from 1 through 9 {
                 .item#{$i} {
                     opacity: 0;
-                    animation: header .4s forwards;
-                    animation-delay: $i * .2s;
+                    animation: header .3s forwards;
+                    animation-delay: $i * .12s;
                 }
             }
 
             @for $i2 from 10 through 19 {
                 .item#{$i2} {
                     opacity: 0;
-                    animation: header .4s forwards;
-                    animation-delay: $i2 * .2s + .5s;
+                    animation: header .3s forwards;
+                    animation-delay: $i2 * .12s + .4s;
                 }
             }
         }
@@ -168,7 +168,7 @@ header {
             opacity: 0;
             padding-top: 20px;
             animation: header 2s forwards;
-            animation-delay: 5.5s;
+            animation-delay: 3.5s;
         }
 
         .btn {
@@ -183,7 +183,7 @@ header {
             margin-top: auto;
             opacity: 0;
             animation: header 2s forwards;
-            animation-delay: 5.5s;
+            animation-delay: 3.5s;
 
             &:hover {
                 background: $main;

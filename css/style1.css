@@ -149,136 +149,136 @@ header .tit-big .wrap {
 }
 header .tit-big .item1 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
 }
 header .tit-big .item2 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
 }
 header .tit-big .item3 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.36s;
+          animation-delay: 0.36s;
 }
 header .tit-big .item4 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
 }
 header .tit-big .item5 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 header .tit-big .item6 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.72s;
+          animation-delay: 0.72s;
 }
 header .tit-big .item7 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.84s;
+          animation-delay: 0.84s;
 }
 header .tit-big .item8 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 0.96s;
+          animation-delay: 0.96s;
 }
 header .tit-big .item9 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 1.08s;
+          animation-delay: 1.08s;
 }
 header .tit-big .item10 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
 header .tit-big .item11 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 2.7s;
-          animation-delay: 2.7s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 1.72s;
+          animation-delay: 1.72s;
 }
 header .tit-big .item12 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 2.9s;
-          animation-delay: 2.9s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 1.84s;
+          animation-delay: 1.84s;
 }
 header .tit-big .item13 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.1s;
-          animation-delay: 3.1s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 1.96s;
+          animation-delay: 1.96s;
 }
 header .tit-big .item14 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.3s;
-          animation-delay: 3.3s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 2.08s;
+          animation-delay: 2.08s;
 }
 header .tit-big .item15 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
 }
 header .tit-big .item16 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.7s;
-          animation-delay: 3.7s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 2.32s;
+          animation-delay: 2.32s;
 }
 header .tit-big .item17 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.9s;
-          animation-delay: 3.9s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 2.44s;
+          animation-delay: 2.44s;
 }
 header .tit-big .item18 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 4.1s;
-          animation-delay: 4.1s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 2.56s;
+          animation-delay: 2.56s;
 }
 header .tit-big .item19 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 4.3s;
-          animation-delay: 4.3s;
+  -webkit-animation: header 0.3s forwards;
+          animation: header 0.3s forwards;
+  -webkit-animation-delay: 2.68s;
+          animation-delay: 2.68s;
 }
 header .tit-sub {
   font-size: 20px;
@@ -289,8 +289,8 @@ header .tit-sub {
   padding-top: 20px;
   -webkit-animation: header 2s forwards;
           animation: header 2s forwards;
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 header .tit .btn {
   width: 220px;
@@ -305,8 +305,8 @@ header .tit .btn {
   opacity: 0;
   -webkit-animation: header 2s forwards;
           animation: header 2s forwards;
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 header .tit .btn:hover {
   background: #d1d59f;

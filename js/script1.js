@@ -40,6 +40,8 @@ $(function () {
             id: i,
             snap: true,
         });
+
+        console.log(i , startPoint, endPoint)
     });
 
     //nav active

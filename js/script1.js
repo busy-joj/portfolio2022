@@ -41,7 +41,7 @@ $(function () {
             snap: true,
         });
 
-        console.log(i , startPoint, endPoint)
+        console.log(i, startPoint, endPoint)
     });
 
     //nav active
@@ -63,8 +63,9 @@ $(function () {
     navLinks.forEach((link, i) => {
         var $h = $('.panel').eq(i).height();
         link.addEventListener("click", e => {
-            if(link.getAttribute('href') == '#about'){
+            if(link.getAttribute('href') == '#work'){
                 gsap.to($(window), { scrollTo: $h*i});
+                console.log(link, panel[i].offsetTop, $h ,$h*i, i)
             }else{
                 gsap.to($(window), { scrollTo: panel[i].offsetTop});
                 console.log(link, panel[i].offsetTop, $h*i, i)

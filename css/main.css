@@ -82,8 +82,7 @@ body {
   bottom: 0;
   margin: auto;
   border-radius: 50%;
-  -webkit-animation: orbit1 10s infinite alternate;
-          animation: orbit1 10s infinite alternate;
+  animation: orbit1 10s infinite alternate;
   transform-style: preserve-3d;
 }
 .main-bg .visual-item .point {
@@ -96,8 +95,7 @@ body {
   bottom: 0;
   margin: auto;
   transform: rotateX(90deg);
-  -webkit-animation: invert 10s infinite alternate;
-          animation: invert 10s infinite alternate;
+  animation: invert 10s infinite alternate;
 }
 .main-bg .visual #item1 {
   transform: rotateX(75deg) rotateY(-20deg);
@@ -123,29 +121,12 @@ body {
   right: -10px;
 }
 
-@-webkit-keyframes orbit1 {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(-360deg);
-  }
-}
-
 @keyframes orbit1 {
   from {
     transform: rotateZ(0deg);
   }
   to {
     transform: rotateZ(-360deg);
-  }
-}
-@-webkit-keyframes orbit2 {
-  from {
-    transform: rotate(0deg) translateX(70px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(70px) rotate(-360deg);
   }
 }
 @keyframes orbit2 {
@@ -156,14 +137,6 @@ body {
     transform: rotate(360deg) translateX(70px) rotate(-360deg);
   }
 }
-@-webkit-keyframes invert {
-  0% {
-    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
-  }
-}
 @keyframes invert {
   0% {
     transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
@@ -172,23 +145,7 @@ body {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
   }
 }
-@-webkit-keyframes skill-scale {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 @keyframes skill-scale {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes skill-pt {
   from {
     transform: scale(0);
   }
@@ -303,8 +260,7 @@ body {
   background: radial-gradient(rgba(255, 255, 255, 0.001), 89%, #FB37FF);
   -webkit-clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
           clip-path: polygon(27% 10.5%, 72.5% 11%, 90% 50%, 70.5% 85%, 26% 91.5%, 4% 50%);
-  -webkit-animation: skill-scale 5s;
-          animation: skill-scale 5s;
+  animation: skill-scale 5s;
 }
 #skill .skill-box .clipboard .clip-inner {
   position: absolute;

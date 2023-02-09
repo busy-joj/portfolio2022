@@ -17,17 +17,6 @@
   letter-spacing: -0.025em;
 }
 
-@-webkit-keyframes header {
-  0% {
-    opacity: 0;
-    transform: rotateX(-45deg) translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg) translateY(0px);
-  }
-}
-
 @keyframes header {
   0% {
     opacity: 0;
@@ -38,31 +27,12 @@
     transform: rotateX(0deg) translateY(0px);
   }
 }
-@-webkit-keyframes bannermove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, 0);
-  }
-}
 @keyframes bannermove {
   0% {
     transform: translate(0, 0);
   }
   100% {
     transform: translate(-50%, 0);
-  }
-}
-@-webkit-keyframes mouse {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translateY(10px);
-  }
-  40% {
-    transform: translate(0);
   }
 }
 @keyframes mouse {
@@ -122,136 +92,98 @@
 }
 .header .tit-big .item1 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation: header 0.4s forwards;
+  animation-delay: 0.2s;
 }
 .header .tit-big .item2 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation: header 0.4s forwards;
+  animation-delay: 0.4s;
 }
 .header .tit-big .item3 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation: header 0.4s forwards;
+  animation-delay: 0.6s;
 }
 .header .tit-big .item4 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation: header 0.4s forwards;
+  animation-delay: 0.8s;
 }
 .header .tit-big .item5 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation: header 0.4s forwards;
+  animation-delay: 1s;
 }
 .header .tit-big .item6 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation: header 0.4s forwards;
+  animation-delay: 1.2s;
 }
 .header .tit-big .item7 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  animation: header 0.4s forwards;
+  animation-delay: 1.4s;
 }
 .header .tit-big .item8 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  animation: header 0.4s forwards;
+  animation-delay: 1.6s;
 }
 .header .tit-big .item9 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  animation: header 0.4s forwards;
+  animation-delay: 1.8s;
 }
 .header .tit-big .item10 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  animation: header 0.4s forwards;
+  animation-delay: 2.5s;
 }
 .header .tit-big .item11 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 2.7s;
-          animation-delay: 2.7s;
+  animation: header 0.4s forwards;
+  animation-delay: 2.7s;
 }
 .header .tit-big .item12 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 2.9s;
-          animation-delay: 2.9s;
+  animation: header 0.4s forwards;
+  animation-delay: 2.9s;
 }
 .header .tit-big .item13 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.1s;
-          animation-delay: 3.1s;
+  animation: header 0.4s forwards;
+  animation-delay: 3.1s;
 }
 .header .tit-big .item14 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.3s;
-          animation-delay: 3.3s;
+  animation: header 0.4s forwards;
+  animation-delay: 3.3s;
 }
 .header .tit-big .item15 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  animation: header 0.4s forwards;
+  animation-delay: 3.5s;
 }
 .header .tit-big .item16 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.7s;
-          animation-delay: 3.7s;
+  animation: header 0.4s forwards;
+  animation-delay: 3.7s;
 }
 .header .tit-big .item17 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 3.9s;
-          animation-delay: 3.9s;
+  animation: header 0.4s forwards;
+  animation-delay: 3.9s;
 }
 .header .tit-big .item18 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 4.1s;
-          animation-delay: 4.1s;
+  animation: header 0.4s forwards;
+  animation-delay: 4.1s;
 }
 .header .tit-big .item19 {
   opacity: 0;
-  -webkit-animation: header 0.4s forwards;
-          animation: header 0.4s forwards;
-  -webkit-animation-delay: 4.3s;
-          animation-delay: 4.3s;
+  animation: header 0.4s forwards;
+  animation-delay: 4.3s;
 }
 .header .tit-sub {
   font-size: 20px;
@@ -260,10 +192,8 @@
   line-height: 1.8rem;
   opacity: 0;
   padding-top: 20px;
-  -webkit-animation: header 2s forwards;
-          animation: header 2s forwards;
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
+  animation: header 2s forwards;
+  animation-delay: 5.5s;
 }
 .header .tit .btn {
   width: 220px;
@@ -276,10 +206,8 @@
   pointer-events: none;
   margin-top: auto;
   opacity: 0;
-  -webkit-animation: header 2s forwards;
-          animation: header 2s forwards;
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
+  animation: header 2s forwards;
+  animation-delay: 5.5s;
 }
 .header .tit .btn:hover {
   background: #d1d59f;
@@ -406,8 +334,7 @@
   color: #fff;
 }
 #main .info-box img {
-  -webkit-animation: mouse 2s infinite;
-          animation: mouse 2s infinite;
+  animation: mouse 2s infinite;
   display: inline-block;
   width: 20px;
 }
@@ -593,15 +520,13 @@
   bottom: 0;
 }
 .slide-page .img-box .wrap {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-end;
   gap: 10px;
-  -webkit-animation: bannermove 10s linear infinite;
-          animation: bannermove 10s linear infinite;
+  animation: bannermove 10s linear infinite;
 }
 .slide-page .img-box .item {
   width: 282px;

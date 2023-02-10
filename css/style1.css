@@ -309,6 +309,50 @@ section h3 .info {
   display: flex;
 }
 
+#main {
+  position: relative;
+  background: #d1d59f;
+  height: 100vh;
+  display: flex;
+}
+#main .img-box {
+  position: relative;
+  width: 70%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  margin: auto;
+}
+#main .img-box img {
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#main .info-box {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  right: 0;
+  gap: 15px;
+}
+#main .info-box .txt {
+  display: inline-block;
+  font-family: "Gotham";
+  color: #fff;
+}
+#main .info-box img {
+  animation: mouse 2s infinite;
+  display: inline-block;
+  width: 20px;
+}
+
 #work {
   display: flex;
 }

@@ -12,17 +12,16 @@ $(function () {
     }, 6000);
 
     // box in section pin
-    var $w = $('.panel.blue .inner').innerWidth();
-    gsap.from(".panel.blue .inner", {
+    var $w = $('.panel.horizontal .inner').innerWidth();
+    gsap.from(".panel.horizontal .inner", {
         scrollTrigger: {
-            trigger: ".panel.blue",
+            trigger: ".panel.horizontal",
             start: "top top",
             end: "94% top",
             scrub: 1,
             pin:true,
             pinSpacing: true,
-            toggleActions: "restart pause reverse pause",
-            markers: true,
+            toggleActions: "restart pause reverse pause"
         },
         x: -$w,
         duration:10
@@ -51,7 +50,7 @@ $(function () {
             trigger: panel[i],
             start: '20px 50px',
             end: 'bottom 50px',
-            markers: { startColor: "fuchsia", endColor: "cyan"},
+            //markers: { startColor: "fuchsia", endColor: "cyan"},
             toggleClass: { targets: a, className: "active" },
             onEnter: () => a.classList.add("active"),
             onLeaveBack: () => a.classList.remove("active")
@@ -73,5 +72,6 @@ $(function () {
             e.preventDefault();
         });
     });
+   
 })
 

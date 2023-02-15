@@ -291,23 +291,22 @@ section h3 .info {
   right: 0;
 }
 
-.box {
-  position: relative;
-  background: rgb(105, 51, 141);
-  width: 80%;
-  height: 80vh;
-}
-.box.last {
-  position: relative;
-  z-index: 1000;
-}
-
 .horizontal {
   width: 400%;
 }
 .horizontal .inner {
   width: 400%;
   display: flex;
+}
+.horizontal .inner .box {
+  position: relative;
+  background: rgb(105, 51, 141);
+  width: 80%;
+  height: 65vh;
+}
+.horizontal .inner .box.last {
+  position: relative;
+  z-index: 1000;
 }
 
 .vertical {

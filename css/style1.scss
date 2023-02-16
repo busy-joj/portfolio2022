@@ -241,7 +241,7 @@ section {
 
 .horizontal {
     width: 400%;
-    .inner{width: 400%;display:flex;
+    .inner{width: 320%;display:flex;padding:100px 0 0 0;box-sizing:border-box;
         .box {
             position: relative;
             background: rgb(105, 51, 141);

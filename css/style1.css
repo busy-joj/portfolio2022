@@ -292,18 +292,19 @@ section h3 .info {
 }
 
 .horizontal {
-  width: 400%;
+  width: 3180px;
 }
 .horizontal .inner {
-  width: 320%;
+  width: 3000px;
   display: flex;
+  gap: 50px;
   padding: 100px 0 0 0;
   box-sizing: border-box;
 }
 .horizontal .inner .box {
   position: relative;
   background: rgb(105, 51, 141);
-  width: 80%;
+  width: 750px;
   height: 65vh;
 }
 .horizontal .inner .box.last {

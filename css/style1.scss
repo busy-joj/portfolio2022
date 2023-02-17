@@ -240,12 +240,12 @@ section {
 
 
 .horizontal {
-    width: 400%;
-    .inner{width: 320%;display:flex;padding:100px 0 0 0;box-sizing:border-box;
+    width: 3180px;
+    .inner{width: 3000px;display:flex;gap:50px;padding:100px 0 0 0;box-sizing:border-box;
         .box {
             position: relative;
             background: rgb(105, 51, 141);
-            width: 80%;
+            width: 750px;
             height: 65vh;
         
             &.last {

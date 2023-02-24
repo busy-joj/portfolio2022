@@ -55,7 +55,7 @@ header {
     background: $main-sub;
     height: 100vh;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
     padding:10% 0;
 
     &.on {
@@ -231,6 +231,17 @@ section {
             line-height: 28px;
             bottom: 0;
             right: 0;
+        }
+    }
+    
+    h4 {
+        font-family: 'Gotham';
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: $main;
+
+        &.mt {
+            margin-top: 50px;
         }
     }
 }
@@ -576,7 +587,126 @@ section {
     }
 }
 
-.mySwiper {
-    padding: 0 5%;
+
+.slide-page {
+    height: 700px;
+
+    .swiper-pagination {
+        text-align: right;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: auto;
+        top: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $main-sub;
+    }
+
+    .tit-box {
+        font-size: 20px;
+        color: $main-sub;
+        line-height: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+
+        .name {
+            font-size: 24px;
+        }
+
+        .period {
+            display: inline-block;
+            margin-right: 10px;
+            opacity: .5;
+            font-size: 20px;
+        }
+    }
+
+    .txt-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: $main-sub;
+
+        .item {
+            font-size: 18px;
+            font-weight: 400;
+            position: relative;
+            padding-left: 20px;
+            line-height: 28px;
+            font-family: 'Noto Sans';
+
+            &::before {
+                position: absolute;
+                content: '●';
+                top: 0;
+                left: 0;
+                font-size: 12px;
+                color: $main-sub;
+            }
+
+            .desc {
+                display: block;
+                font-weight: 200;
+                position: relative;
+                padding-left: 16px;
+                font-family: 'Noto Sans';
+
+                &::before {
+                    position: absolute;
+                    content: '-';
+                    top: 0;
+                    left: 0;
+                }
+
+            }
+        }
+    }
+
+    .img-box {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+
+        .wrap {
+            width: fit-content;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+            gap: 10px;
+            animation: bannermove 10s linear infinite;
+        }
+
+
+        .item {
+            width: 282px;
+            height: 176px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 1px 1px 9px rgba(0, 0, 0, .2);
+
+            &.vertical {
+                width: 197px;
+                height: 265px;
+            }
+
+            img {
+                width: 100%;
+                display: inline-block;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.mySwiper {   
+    padding:0 2%;
     box-sizing: border-box;
 }

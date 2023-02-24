@@ -44,7 +44,7 @@ header {
   background: #2E304B;
   height: 100vh;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
   padding: 10% 0;
 }
 header.on {
@@ -289,6 +289,15 @@ section h3 .info {
   line-height: 28px;
   bottom: 0;
   right: 0;
+}
+section h4 {
+  font-family: "Gotham";
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #d1d59f;
+}
+section h4.mt {
+  margin-top: 50px;
 }
 
 .horizontal {
@@ -592,7 +601,108 @@ section h3 .info {
   border-radius: 5px;
 }
 
+.slide-page {
+  height: 700px;
+}
+.slide-page .swiper-pagination {
+  text-align: right;
+}
+.slide-page .swiper-horizontal > .swiper-pagination-bullets,
+.slide-page .swiper-pagination-bullets.swiper-pagination-horizontal,
+.slide-page .swiper-pagination-custom,
+.slide-page .swiper-pagination-fraction {
+  bottom: auto;
+  top: 0;
+}
+.slide-page .swiper-pagination-bullet-active {
+  background: #2E304B;
+}
+.slide-page .tit-box {
+  font-size: 20px;
+  color: #2E304B;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.slide-page .tit-box .name {
+  font-size: 24px;
+}
+.slide-page .tit-box .period {
+  display: inline-block;
+  margin-right: 10px;
+  opacity: 0.5;
+  font-size: 20px;
+}
+.slide-page .txt-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #2E304B;
+}
+.slide-page .txt-box .item {
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 20px;
+  line-height: 28px;
+  font-family: "Noto Sans";
+}
+.slide-page .txt-box .item::before {
+  position: absolute;
+  content: "●";
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  color: #2E304B;
+}
+.slide-page .txt-box .item .desc {
+  display: block;
+  font-weight: 200;
+  position: relative;
+  padding-left: 16px;
+  font-family: "Noto Sans";
+}
+.slide-page .txt-box .item .desc::before {
+  position: absolute;
+  content: "-";
+  top: 0;
+  left: 0;
+}
+.slide-page .img-box {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+.slide-page .img-box .wrap {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 10px;
+  animation: bannermove 10s linear infinite;
+}
+.slide-page .img-box .item {
+  width: 282px;
+  height: 176px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+}
+.slide-page .img-box .item.vertical {
+  width: 197px;
+  height: 265px;
+}
+.slide-page .img-box .item img {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+}
+
 .mySwiper {
-  padding: 0 5%;
+  padding: 0 2%;
   box-sizing: border-box;
 }/*# sourceMappingURL=style1.css.map */

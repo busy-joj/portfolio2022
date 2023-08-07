@@ -1,302 +1,133 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Generator" content="VS Code" />
-  <meta name="Author" content="정윤정" />
-  <meta name="Keywords" content="정윤정, Jeong Younjung, 포트폴리오, 정윤정 포트폴리오, portfolio, Younjung's portfolio" />
-  <meta name="Description" content="정윤정의 포트폴리오 페이지 입니다" />
-  <link rel="shortcut icon" href="favicon.ico">
-  <title>Younjung's portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Generator" content="VS Code" />
+    <meta name="Author" content="정윤정" />
+    <meta name="Keywords" content="정윤정, Jeong Younjung, 포트폴리오, 정윤정 포트폴리오, portfolio, Younjung's portfolio" />
+    <meta name="Description" content="정윤정의 포트폴리오 페이지 입니다" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Younjung's portfolio</title>
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style1.css">
 
-  <script src="./js/jquery-2.2.4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-  <script src="./js/script2.js"></script>
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 
-<body>
-  <div class="page no-scroll">
+<body class="no-scroll">
 
-    <header class="header">
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="active">
-            <a href="#main" class="item">Home</a>
-          </li>
-          <li><a href="#about" class="item">About</a></li>
-          <li><a href="#work" class="item">Work</a></li>
-          <li><a href="#contact" class="item">contact</a></li>
-        </ul>
-      </nav><!-- nav -->
-      <div class="tit">
-        <div class="tit-big">
-          <span class="item1">W</span>
-          <span class="item2">E</span>
-          <span class="item3">L</span>
-          <span class="item4">C</span>
-          <span class="item5">O</span>
-          <span class="item6">M</span>
-          <span class="item7">E</span>
-        </div>
-        <div class="tit-big">
-          <span class="wrap">
-            <span class="item10">M</span>
-            <span class="item11">Y</span>
-          </span>
-          <span class="wrap">
-            <span class="item8">T</span>
-            <span class="item9">O</span>
-          </span>
-        </div>
-        <div class="tit-big">
-          <span class="item12">P</span>
-          <span class="item13">O</span>
-          <span class="item14">R</span>
-          <span class="item15">T</span>
-          <span class="item16">F</span>
-          <span class="item17">L</span>
-          <span class="item18">I</span>
-          <span class="item19">O</span>
-        </div>
-        <h1 class="tit-sub">
-          지속가능한 발전을 추구하는 프론트엔드 개발자, 정윤정
-          <span class="blind">포트폴리오</span>
-        </h1>
-        <button class="btn">Let's work together</button>
-      </div>
-    </header><!-- .header -->
-    <div class="content">
-      <div class="section" id="main">
-        <h2 class="blind">Home</h2>
-        <div class="img-box">
-          <img src="./images/img-main.png" alt="">
-        </div>
-        <div class="info-box">
-          <span class="txt">SCROLL DOWN</span>
-          <img src="./images/ico-mouse.png" alt="">
-        </div>
-      </div>
-      <div class="section" id="about">
-        <h2>About <span class="info">Please swipe or drag</span></h2>
-        <div class="swiper ySwiper slide-page">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <h3>Hello, </h3>
-              <div class="tit-box">
-                <div class="item">
-                  현재에 안주 하지 않는 도전 정신과<br>
-                  답을 찾아 고뇌 하는 집요함을 원동력으로 한 걸음씩 성장하는 정윤정입니다.<br><br>
-
-                  웹은 하루가 다르게 변화 하고 진화 하기에 지속적으로 학습하면서,<br>
-                  변화를 캐치해야 한다고 생각 되어 안주하지 않고<br>
-                  1일 1커밋 챌린지와 개발 노트 블로그를 운영하며 새로운 기술을 습득 하기 위해 도전합니다.<br>
-
-                  또한 작업 중 만나는 풀기 어려운 문제들은 포기 하고 싶은 순간이 아니라<br>
-                  성취를 이룰수 있는 기회라고 생각되어 답을 찾아내는 과정을 즐길 수 있으며,<br>
-                  다양한 각도로 접근하려고 노력하며, 해결할 때까지 집요하게 도전합니다.<br>
-                </div>
-              </div>
-              <h3 class="mt">Skill</h3>
-              <ul class="txt-box">
-                <li class="item">
-                  HTML : 웹퍼블리싱/웹표준 &#183; 모바일/하이브리드APP &#183; 웹접근성 개선 및 정책 수립
-                </li>
-                <li class="item">
-                  CSS : 패럴럭스, 반응형웹 구축 경험 &#183; SCSS/SASS
-                </li>
-                <li class="item">
-                  Javascript : UI 개발&#183; 비동기 데이터 연동(AJAX) 개발 <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다양한
-                  프레임워크 경험 (jQuery,
-                  Vue, React, Typescript)
-                </li>
-                <li class="item">
-                  ETC : Git &#183; Figma &#183; Zeplin &#183; photoshop
-                </li>
-              </ul>
-            </div>
-            <div class="swiper-slide">
-              <h3>Careers</h3>
-              <div class="tit-box">
-                <div class="name">
-                  (주)KBS미디어 <span class="period">2021.05 - 2023.05</span>
-                </div>
-                <div class="desc">
-                  KBS(한국방송공사) 계열 영상제작/미디어 콘텐츠 유통사로 KBS의 뉴미디어 사업을 수행
-                </div>
-              </div>
-              <ul class="txt-box">
-                <li class="item">
-                  KBS 홈페이지 유지 보수 및 다수의 특집 사이트 제작 및 구축
-                  <span class="desc">&lt;4회, 5회 우리말 인증고사&gt;, &lt;KBS옛날라디오&gt, &lt;KBS 챗봇&gt; 등</span>
-                </li>
-                <li class="item">
-                  웹 접근성 취약점 점검 및 개선 업무
-                  <span class="desc">&lt;2022 베이징 올림픽&gt;, &lt;KBS바다&gt; 등 신규 서비스 웹 접근성을 95% 이상 준수 <br>
-                    &lt;KBS 소개&gt; 장애인 웹 접근성 인증 마크 갱신</span>
-                </li>
-                <li class="item">
-                  영상 스트리밍 APP &lt;myK&gt;, 라디오 청취 APP &lt;KONG&gt;의 하이브리드 WEB/APP 프론트엔드 개발
-                </li>
-                <li class="item">
-                  AI 영상 편집 플랫폼 &lt;Vertigo&gt의 실시간 편집 기능 및 웹 관리 페이지 퍼블리싱 및
-                  프론트엔드 개발
-                </li>
-              </ul>
-              <div class="img-box">
-                <ul class="wrap">
-                  <li class="item vertical"><img src="./images/img-work-pub1.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub2.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub3.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub4.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub5.png" alt=""></li>
-
-                  <li class="item vertical"><img src="./images/img-work-pub1.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub2.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub3.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub4.png" alt=""></li>
-                  <li class="item"><img src="./images/img-work-pub5.png" alt=""></li>
+    <div class="page">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#main" class="item">Home</a>
+                    </li>
+                    <li><a href="#about" class="item">About</a></li>
+                    <li><a href="#work" class="item">Work</a></li>
+                    <li><a href="#contact" class="item">Contact</a></li>
                 </ul>
-              </div>
+            </nav><!-- nav -->
+            <div class="tit">
+                <div class="tit-big">
+                    <span class="item1">W</span>
+                    <span class="item2">E</span>
+                    <span class="item3">L</span>
+                    <span class="item4">C</span>
+                    <span class="item5">O</span>
+                    <span class="item6">M</span>
+                    <span class="item7">E</span>
+                </div>
+                <div class="tit-big">
+                    <span class="wrap">
+                    <span class="item10">M</span>
+                    <span class="item11">Y</span>
+                    </span>
+                    <span class="wrap">
+                    <span class="item8">T</span>
+                    <span class="item9">O</span>
+                    </span>
+                </div>
+                <div class="tit-big">
+                    <span class="item12">P</span>
+                    <span class="item13">O</span>
+                    <span class="item14">R</span>
+                    <span class="item15">T</span>
+                    <span class="item16">F</span>
+                    <span class="item17">L</span>
+                    <span class="item18">I</span>
+                    <span class="item19">O</span>
+                </div>
+                <h1 class="tit-sub">
+                    지속가능한 발전을 추구하는 프론트엔드 개발자, 정윤정
+                    <span class="blind">포트폴리오</span>
+                </h1>
+                <button class="btn">Let's work together</button>
             </div>
-          </div>
-          <div class="swiper-pagination"></div>
+        </header>
+        <div class="content">
+            <section id="main" class="panel snap">panel red</section>
+            <section id="about" class="panel snap">panel gray</section>
+            <section id="work" class="panel blue snap">
+                <div class="inner">
+                    <div class="box">
+                        <h2>Section Two – BOX A</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Section Two – BOX B</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Section Two – BOX C</h2>
+                    </div>
+                    <div class="box last">
+                        <h2>Section Two – BOX D</h2>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="panel snap">
+                <h3 class="color">Contact</h3>
+                <div class="list">
+                    <div class="list-wrap row">
+                        <a href="https://github.com/busy-joj" target="_blank" class="list-item circle">
+                            <div class="img-box">
+                                <img class="img" src="./images/git-icon1.png" alt="">
+                            </div>
+                            <div class="desc">
+                                <span class="txt">Github</span>
+                            </div>
+                        </a>
+                        <a class="list-item circle" href="mailto:busy.joj@gmail.com">
+                            <div class="img-box">
+                                <img class="img" src="./images/mail-icon1.png" alt="">
+                            </div>
+                            <div class="desc">
+                                <span class="txt">E-mail</span>
+                            </div>
+                        </a>
+                        <a href="https://busy-joj.github.io/" target="_blank" class="list-item circle">
+                            <div class="img-box">
+                                <img class="img" src="./images/note-icon1.png" alt="">
+                            </div>
+                            <div class="desc">
+                                <span class="txt">Blog</span>
+                            </div>
+                        </a>
+                    </div><!-- .list-wrap.row -->
+                </div><!-- .list -->
+                <p>Thank you for visiting! <br></p>
+            </section>
         </div>
-
-      </div>
-      <div class="section" id="work">
-        <h2>Work</h2>
-        <div class="list">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide list-item">
-                <div class="img-box">
-                  <img class="img" src="./images/img-work-fe1.png" alt="">
-                  <div class="overlay">
-                    <span class="txt">The Absck ekclsodjfjdk
-                      dkjfklsdjlfkajsdlfas</span>
-                    <a class="btn" href="#none">View More</a>
-                  </div>
-                </div>
-                <div class="desc">
-                  <span class="txt">Vue.js</span>
-                  <span class="txt">Admin System</span>
-                </div>
-              </div>
-              <div class="swiper-slide list-item">
-                <div class="img-box">
-                  <img class="img" src="./images/img-work-fe2.png" alt="">
-                  <div class="overlay">
-                    <span class="txt">The Absck ekclsodjfjdk
-                      dkjfklsdjlfkajsdlfas</span>
-                    <a class="btn" href="#none">View More</a>
-                  </div>
-                </div>
-                <div class="desc">
-                  <span class="txt">Vue.js</span>
-                  <span class="txt">Movie Web</span>
-                </div>
-              </div>
-              <div class="swiper-slide list-item">
-                <div class="img-box">
-                  <img class="img" src="./images/img-work-fe2.png" alt="">
-                  <div class="overlay">
-                    <span class="txt">The Absck ekclsodjfjdk
-                      dkjfklsdjlfkajsdlfas</span>
-                    <a class="btn" href="#none">View More</a>
-                  </div>
-                </div>
-                <div class="desc">
-                  <span class="txt">Vue.js</span>
-                  <span class="txt">weather Web</span>
-                </div>
-              </div>
-              <div class="swiper-slide list-item">
-                <div class="img-box">
-                  <img class="img" src="./images/img-work-fe1.png" alt="">
-                  <div class="overlay">
-                    <span class="txt">Open API를 이용하여,<br> 전세계 COVID-19 확진자 <br>관련 정보를 전달하기 위한 개인 프로젝트 - 사용자로 하여금 정보를 보기
-                      쉽게 제공하기 위해 chart.js를 사용</span>
-                    <a class="btn" href="#none">View More</a>
-                  </div>
-                </div>
-                <div class="desc">
-                  <span class="txt">Vue.js</span>
-                  <span class="txt">Covid-19 Web</span>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="swiper-pagination"></div> -->
-          </div>
-          <!-- 퍼블리싱, 프론트엔드 전용 -->
-
-          <!-- <div class="list-wrap"> -->
-          <!-- <div class="list-item">
-              <div class="txt">.01</div>
-              <div class="img-box">
-                <img class="img" src="./images/img-work-fe1.png" alt="">
-                <div class="overlay">
-                  <span class="txt">The Absck ekclsodjfjdk
-                    dkjfklsdjlfkajsdlfas</span>
-                  <a class="btn" href="#none">View More</a>
-                </div>
-              </div>
-              <div class="desc">
-                <span class="txt">React.js</span>
-                <span class="txt">weather App</span>
-              </div>
-            </div>  --><!--.list-item -->
-          <!-- 단독 리스트 전용 -->
-          <!-- </div> -->
-          <!--.list-wrap -->
-        </div>
-      </div>
-      <div class="section" id="contact">
-        <h2>Contact</h2>
-        <div class="list">
-          <div class="list-wrap row">
-            <div class="list-item circle">
-              <div class="img-box">
-                <img class="img" src="./images/git-icon1.png" alt="">
-              </div>
-              <div class="desc">
-                <span class="txt">Github</span>
-              </div>
-            </div>
-            <div class="list-item circle">
-              <div class="img-box">
-                <img class="img" src="./images/mail-icon1.png" alt="">
-              </div>
-              <div class="desc">
-                <span class="txt">E-mail</span>
-              </div>
-            </div>
-            <div class="list-item circle">
-              <div class="img-box">
-                <img class="img" src="./images/note-icon1.png" alt="">
-              </div>
-              <div class="desc">
-                <span class="txt">Blog</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>
-          Thank you for visiting! <br>
-        </p>
-      </div> <!-- #contack.section -->
-
     </div>
-  </div>
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+<script src="./js/script1.js"></script>
 </html>
